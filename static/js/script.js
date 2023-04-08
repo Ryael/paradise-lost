@@ -40,3 +40,10 @@ const getAnimationTime = () => {
 
 rotateText();
 setInterval(rotateText, getAnimationTime());
+
+/* Fullscreen Hamburger Navigation Menu */
+
+$(".toggle-menu").click (function(){
+  $(this).toggleClass("active");
+  $("#menu").toggleClass("open");
+});
