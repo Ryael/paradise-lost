@@ -22,11 +22,31 @@
 <body>
   <!-- Hero Section -->
   <section>
+    <div id="hero-text">
+      <h1>
+        Build Your <br>
+        <span class="rotating-text"></span>
+      </h1>
+    </div>
     <div id="hero-video">
       <video playsinline autoplay muted loop poster="placeholder.jpg" id="bgvideo" width="1920" height="1080">
         <source src="{% static 'video/bg-video.mp4' %}">
       </video>
     </div>
   </section>
+  <!-- End Hero Section -->
 </body>
+
+<!-- Local Javascript -->
+<script src="{% static 'js/script.js' %}"></script>
+<!-- End Local Javascript -->
+
+<!-- No Script Error -->
+<noscript>
+    <h1>JavaScript Required</h1>
+    <p>
+        Your browser either does not support JavaScript, or it is not enabled. In order to see and use this site, please enable JavaScript.
+    </p>
+</noscript>
+<!-- No Script Error -->
 </html>
