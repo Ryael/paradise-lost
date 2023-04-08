@@ -48,6 +48,23 @@
         </li>
       </ul>
     </nav>
+    <!-- Footer -->
+    <footer class="menu-footer">
+      <nav class="footer-navigation">
+        <ul>
+          <li>
+             <a href="https://github.com/Ryael" class="social-icons" title="GitHub" rel="noopener" aria-label="Visit my Github page (opens in a new tab)" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+          </li>
+          <li>
+              <a href="https://www.linkedin.com/in/andrey-belyakov-/" class="social-icons" title="Linked In" rel="noopener" aria-label="Visit my LinkedIn page (opens in a new tab)" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>
+          </li>
+          <li>
+             <a href="mailto:rayrah@live.com" class="social-icons" title="E-mail" rel="noopener" aria-label="Send me an email (opens email application)" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <!-- End Footer -->
   </div>
   <!-- End Navigation Menu -->
 
@@ -74,26 +91,30 @@
     </div>
   </section>
   <!-- End Hero Section -->
+
+  <!-- jQuery -->
+  {% load static %}
+  <script
+    src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous">
+  </script>
+  <!-- End jQuery -->
+
+  <!-- Local Javascript -->
+  <script src="{% static 'js/script.js' %}"></script>
+  <!-- End Local Javascript -->
+
+  <!-- Font Awesome Script -->
+  <script src="https://kit.fontawesome.com/d93feb1e77.js" crossorigin="anonymous"></script>
+  <!--End Font Awesome Script -->
 </body>
-
-<!-- jQuery -->
-{% load static %}
-<script
-  src="https://code.jquery.com/jquery-3.6.3.min.js"
-  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-  crossorigin="anonymous">
-</script>
-<!-- End jQuery -->
-
-<!-- Local Javascript -->
-<script src="{% static 'js/script.js' %}"></script>
-<!-- End Local Javascript -->
 
 <!-- No Script Error -->
 <noscript>
     <h1>JavaScript Required</h1>
     <p>
-        Your browser either does not support JavaScript, or it is not enabled. In order to see and use this site, please enable JavaScript.
+      Your browser either does not support JavaScript, or it is not enabled. In order to see and use this site, please enable JavaScript.
     </p>
 </noscript>
 <!-- No Script Error -->
