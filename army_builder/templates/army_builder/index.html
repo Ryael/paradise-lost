@@ -3,9 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
   <title>Home</title>
 </head>
 <body>
-
+  <div id="hero-video">
+      <video playsinline autoplay muted loop poster="placeholder.jpg" id="bgvideo" width="1920" height="1080">
+        <source src="{% static 'video/bg-video.mp4' %}">
+      </video>
+  </div>
 </body>
 </html>
