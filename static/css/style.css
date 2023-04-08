@@ -354,13 +354,13 @@ video {
   cursor: pointer;
   display: inline-block;
   float: right;
-  height: 50px;
+  height: 70px;
   outline: none;
   padding: 0;
   pointer-events: initial;
   position: relative;
   vertical-align: middle;
-  width: 50px;
+  width: 80px;
   z-index: 110;
 }
 
@@ -368,7 +368,7 @@ video {
   background-color: #fff;
   content: "";
   display: block;
-  height: 2px;
+  height: 3px;
   left: calc(50% - 13px);
   position: absolute;
   top: calc(50% - 1px);
@@ -381,7 +381,7 @@ video {
   background-color: #fff;
   content: "";
   display: block;
-  height: 2px;
+  height: 3px;
   position: absolute;
   transform-origin: 50% 50%;
   transition: background-color 0.2s ease-in-out, top 0.2s 0.2s ease-out, transform 0.2s linear;
