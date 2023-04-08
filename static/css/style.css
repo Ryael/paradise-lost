@@ -414,3 +414,25 @@ video {
   top: 0;
   transform: rotate3d(0, 0, 1, 45deg);
 }
+
+/* Logo */
+
+#logo h1 {
+  position: relative;
+  padding: 20px 0 0 26px;
+  z-index: 100;
+}
+
+#logo a {
+  text-decoration: none;
+}
+
+#logo-pt1 {
+  color: #fff;
+  font-weight: 700;
+}
+
+#logo-pt2 {
+  color: #fd9c31;
+  font-weight: 400;
+}
