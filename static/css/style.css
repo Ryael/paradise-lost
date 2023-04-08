@@ -193,7 +193,7 @@ video {
 /* Navigation Menu */
 
 #menu {
-  background: radial-gradient(circle, #383325, #1f1f1f);
+  background: #1e1e1e url("../img/dot.png") repeat;
   height: 100%;
   left: 0;
   opacity: 0;
