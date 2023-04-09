@@ -1,0 +1,29 @@
+{% extends "army_builder/layout/base.html" %}
+
+{% block content %}
+
+{% load static %}
+<!-- Hero Section -->
+<section>
+  <div id="hero-text">
+    <h2>
+      Build Your <br>
+      <span class="rotating-text"></span>
+    </h2>
+    <div id="cta-button">
+    <button class="button">
+      <span class="decorator top left"></span>
+      <span class="decorator top right"></span>
+      <span class="decorator bottom left"></span>
+      <span class="decorator bottom right"></span>
+      <span>Enlist Now</span></button>
+    </div>
+  </div>
+  <div id="hero-video">
+    <video playsinline autoplay muted loop poster="placeholder.jpg" id="bgvideo" width="1920" height="1080">
+      <source src="{% static 'video/bg-video.mp4' %}">
+    </video>
+  </div>
+</section>
+<!-- End Hero Section -->
+{% endblock %}
