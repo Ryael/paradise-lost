@@ -48,7 +48,7 @@ h3 {
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -10;
+  z-index: 0;
   transform: translateX(-50%) translateY(-50%);
 }
 
@@ -109,6 +109,20 @@ video {
     opacity: 100;
   }
 }
+
+/* Background */
+
+#page-bg {
+  height: 100vh;
+  width: 100vw;
+  background: #191919;
+  background-image:
+    linear-gradient(90deg, #111 1rem, transparent 1rem),
+    linear-gradient(#111 1rem, transparent 1rem);
+  background-size: 1.2rem 1.2rem;
+  z-index: -1000;
+}
+
 
 /* Buttons */
 
@@ -436,3 +450,4 @@ video {
   color: #fd9c31;
   font-weight: 400;
 }
+
