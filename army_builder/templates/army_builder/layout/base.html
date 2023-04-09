@@ -4,12 +4,13 @@
   {% include "army_builder/layout/head.html" %}
 </head>
 <body>
-  {% include "army_builder/components/navigation-menu.html" %}
+  <section id="page-bg">
+    {% include "army_builder/components/navigation-menu.html" %}
 
-  {% block content %}
+    {% block content %}
 
-  {% endblock %}
-
+    {% endblock %}
+  </section>
   {% include "army_builder/layout/scripts.html" %}
 </body>
 </html>
