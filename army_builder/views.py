@@ -2,5 +2,5 @@ from django.shortcuts import render
 
 # Create your views here.
 def get_index(request):
-  return render(request, "army_builder/layout/index.html")
+  return render(request, "pages/index.html")
 

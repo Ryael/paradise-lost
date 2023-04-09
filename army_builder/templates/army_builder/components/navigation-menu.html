@@ -1,0 +1,67 @@
+<!-- Navigation Menu -->
+<header id="header">
+<nav class="nav">
+  <button class="hamburger-menu">
+    <span></span>
+  </button>
+  <div id="logo">
+    <a href="#">
+      <h1>
+        <span id="logo-pt1">Paradise </span><span id="logo-pt2">Lost</span>
+      </h1>
+    </a>
+  </div>
+</nav>
+</header>
+<div id="menu" class="">
+  <nav class="main-navigation">
+    <ul>
+      <li>
+        <a href="#">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          About
+        </a>
+      </li>
+      {% if user.is_authenticated %}
+      <li>
+        <a href="{% url 'account_logout' %}">
+          Logout
+        </a>
+      </li>
+      {% else %}
+      <li>
+        <a href="{% url 'account_signup' %}">
+          Register
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'account_login' %}">
+          Login
+        </a>
+      </li>
+      {% endif %}
+    </ul>
+  </nav>
+  <!-- Footer -->
+  <footer class="menu-footer">
+    <nav class="footer-navigation">
+      <ul>
+        <li>
+           <a href="https://github.com/Ryael" class="social-icons" title="GitHub" rel="noopener" aria-label="Visit my Github page (opens in a new tab)" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/andrey-belyakov-/" class="social-icons" title="Linked In" rel="noopener" aria-label="Visit my LinkedIn page (opens in a new tab)" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>
+        </li>
+        <li>
+           <a href="mailto:rayrah@live.com" class="social-icons" title="E-mail" rel="noopener" aria-label="Send me an email (opens email application)" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+  <!-- End Footer -->
+</div>
+<!-- End Navigation Menu -->
