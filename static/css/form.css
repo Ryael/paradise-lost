@@ -137,4 +137,9 @@
 
 #login-form #id_remember {
   margin: -18px 0px 0px 0px;
+  accent-color: #fd9c31;
+}
+
+#id_remember:not(:checked) {
+  opacity: 0.7;
 }
