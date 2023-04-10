@@ -27,3 +27,6 @@ class Army(BaseModel):
     Stores army data.
     """
     ruleset = models.ForeignKey(Ruleset, on_delete=models.CASCADE)
+
+    class Meta:
+        verbose_name_plural = "Armies"
