@@ -435,6 +435,7 @@ video {
   position: relative;
   padding: 20px 0 0 26px;
   z-index: 100;
+  font-size: 24px;
 }
 
 #logo a {
