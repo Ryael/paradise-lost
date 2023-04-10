@@ -33,7 +33,7 @@ class Army(BaseModel):
 
 class Specialism(BaseModel):
     """
-    Stores ability information.
+    Stores specialism information.
     """
 
 class Wargear(BaseModel):
@@ -49,6 +49,17 @@ class Wargear(BaseModel):
 
     class Meta:
         verbose_name_plural = "Wargear"
+
+class Ability(BaseModel):
+    """
+    Stores ability rules.
+    """
+    class Meta:
+        verbose_name_plural = "Abilities"
+
+    specialism = models.ForeignKey(Specialism, on_delete=models.CASCADE, null=True)
+    wargear = models.ForeignKey(Wargear, on_delete=models.CASCADE, null=True)
+    rule = models.TextField()
 
 class Unit(BaseModel):
     """
@@ -69,3 +80,4 @@ class Unit(BaseModel):
     points_cost = models.SmallIntegerField(default=0, null=False, blank=False)
     specialisms = models.ManyToManyField(Specialism)
     wargear = models.ManyToManyField(Wargear)
+    abilities = models.ManyToManyField(Ability)
