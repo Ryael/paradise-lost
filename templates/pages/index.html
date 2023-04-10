@@ -11,12 +11,15 @@
       <span class="rotating-text"></span>
     </h2>
     <div id="cta-button">
-    <button class="button">
-      <span class="decorator top left"></span>
-      <span class="decorator top right"></span>
-      <span class="decorator bottom left"></span>
-      <span class="decorator bottom right"></span>
-      <span>Enlist Now</span></button>
+    <a href="{% url 'account_signup' %}">
+      <button type="submit" class="button">
+        <span class="decorator top left"></span>
+        <span class="decorator top right"></span>
+        <span class="decorator bottom left"></span>
+        <span class="decorator bottom right"></span>
+        <span>Enlist Now</span>
+      </button>
+    </a>
     </div>
   </div>
   <div id="hero-video">
