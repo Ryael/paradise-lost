@@ -22,3 +22,8 @@ class Ruleset(BaseModel):
     Stores ruleset data.
     """
 
+class Army(BaseModel):
+    """
+    Stores army data.
+    """
+    ruleset = models.ForeignKey(Ruleset, on_delete=models.CASCADE)
