@@ -30,3 +30,21 @@ class Army(BaseModel):
 
     class Meta:
         verbose_name_plural = "Armies"
+
+# class Unit(BaseModel):
+#     """
+#     Stores unit's unique characteristics.
+#     """
+#     army = models.ForeignKey(Army, on_delete=models.CASCADE)
+#     move = models.CharField(max_length=3)
+#     weapon_skill = models.CharField(max_length=3)
+#     ballistics_skill = models.CharField(max_length=3)
+#     strength = models.CharField(max_length=3)
+#     toughness = models.CharField(max_length=3)
+#     wounds = models.CharField(max_length=3)
+#     attacks = models.CharField(max_length=3)
+#     leadership = models.CharField(max_length=3)
+#     armour_save = models.CharField(max_length=3)
+#     max_units = models.CharField(max_length=3)
+#     keywords = models.TextField()
+#     points_cost = models.SmallIntegerField(default=0, null=False, blank=False)
