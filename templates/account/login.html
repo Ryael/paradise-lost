@@ -21,12 +21,16 @@
         <span class="decorator top left"></span>
         <span class="decorator top right"></span>
         <span class="decorator bottom left"></span>
-        <span class="decorator bottom right"></span></button>
+        <span class="decorator bottom right"></span>
+      </button>
     </form>
     <div id="end-form">
       <p>
         {% blocktrans %}
-        <a href="{{ signup_url }}">Don't have an account? <span>Sign up.</span></a>
+        Don't have an account?
+        <a href="{{ signup_url }}">
+          <span>Sign up.</span>
+        </a>
         {% endblocktrans %}
       </p>
     </div>
