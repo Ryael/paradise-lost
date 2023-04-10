@@ -36,6 +36,20 @@ class Specialism(BaseModel):
     Stores ability information.
     """
 
+class Wargear(BaseModel):
+    """
+    Stores wargear statistics.
+    """
+    range = models.CharField(max_length=4)
+    type = models.CharField(max_length=50)
+    strength = models.CharField(max_length=3)
+    armor_penetration = models.CharField(max_length=3)
+    damage = models.CharField(max_length=5)
+    points_cost = models.SmallIntegerField(default=0, null=False, blank=False)
+
+    class Meta:
+        verbose_name_plural = "Wargear"
+
 class Unit(BaseModel):
     """
     Stores unit's unique characteristics.
@@ -54,3 +68,4 @@ class Unit(BaseModel):
     keywords = models.TextField()
     points_cost = models.SmallIntegerField(default=0, null=False, blank=False)
     specialisms = models.ManyToManyField(Specialism)
+    wargear = models.ManyToManyField(Wargear)
