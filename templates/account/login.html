@@ -6,19 +6,30 @@
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
-<div id="login-form">
-  <h1>{% trans "Sign In" %}</h1>
-
-  <p>{% blocktrans %}If you have not created an account yet, then please
-  <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
-
-  <form class="login" method="POST" action="{% url 'account_login' %}">
-    {% csrf_token %}
-    {{ form.as_p }}
-    {% if redirect_field_value %}
-    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-    {% endif %}
-    <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
-  </form>
+<div id="form-container">
+  <span class="decorator top left"></span>
+  <span class="decorator bottom right"></span>
+  <div id="login-form">
+    <h2>{% trans "Sign In" %}</h2>
+    <form class="login" method="POST" action="{% url 'account_login' %}">
+      {% csrf_token %}
+      {{ form.as_p }}
+      {% if redirect_field_value %}
+      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+      {% endif %}
+      <button class="primaryAction, button"  type="submit">{% trans "Sign In" %}
+        <span class="decorator top left"></span>
+        <span class="decorator top right"></span>
+        <span class="decorator bottom left"></span>
+        <span class="decorator bottom right"></span></button>
+    </form>
+    <div id="end-form">
+      <p>
+        {% blocktrans %}
+        <a href="{{ signup_url }}">Don't have an account? <span>Sign up.</span></a>
+        {% endblocktrans %}
+      </p>
+    </div>
+  </div>
 </div>
 {% endblock %}
