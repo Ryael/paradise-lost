@@ -31,6 +31,11 @@ class Army(BaseModel):
     class Meta:
         verbose_name_plural = "Armies"
 
+class Specialism(BaseModel):
+    """
+    Stores ability information.
+    """
+
 class Unit(BaseModel):
     """
     Stores unit's unique characteristics.
@@ -48,3 +53,4 @@ class Unit(BaseModel):
     max_units = models.CharField(max_length=3)
     keywords = models.TextField()
     points_cost = models.SmallIntegerField(default=0, null=False, blank=False)
+    specialisms = models.ManyToManyField(Specialism)
