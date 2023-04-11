@@ -30,10 +30,20 @@ class Army(BaseModel):
 
     ruleset = models.ForeignKey(Ruleset, on_delete=models.CASCADE)
 
+class Ability(BaseModel):
+    """
+    Stores ability rules.
+    """
+    class Meta:
+        verbose_name_plural = "Abilities"
+
+    rule = models.TextField()
+
 class Specialism(BaseModel):
     """
     Stores specialism information.
     """
+    abilities = models.ManyToManyField(Ability)
 
 class Wargear(BaseModel):
     """
@@ -48,17 +58,7 @@ class Wargear(BaseModel):
     armor_penetration = models.CharField(max_length=3)
     damage = models.CharField(max_length=5)
     points_cost = models.SmallIntegerField(default=0, null=False, blank=False)
-
-class Ability(BaseModel):
-    """
-    Stores ability rules.
-    """
-    class Meta:
-        verbose_name_plural = "Abilities"
-
-    specialism = models.ForeignKey(Specialism, on_delete=models.CASCADE, null=True)
-    wargear = models.ForeignKey(Wargear, on_delete=models.CASCADE, null=True)
-    rule = models.TextField()
+    ability = models.ForeignKey(Ability, on_delete=models.CASCADE, null=True)
 
 class Unit(BaseModel):
     """
