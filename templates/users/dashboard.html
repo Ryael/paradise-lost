@@ -9,6 +9,15 @@
     {% if user.is_authenticated %}
         <p id="welcome-text">Welcome, Commander <span id="username">{{ user.username}}.</span>
         </p>
+        {% if messages %}
+        <div id="dashboard-messages">
+          <ul>
+            {% for message in messages %}
+            <li>{{message}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
         <div class="dashboard-button">
           <a href="{% url 'account_change_password' %}">
             <button type="submit" class="button">
