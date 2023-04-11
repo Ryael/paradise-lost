@@ -3,16 +3,45 @@
 {% load i18n %}
 
 {% block content %}
-<div>
+<div id="dashboard-container">
+  <div id="dashboard">
+    <h2>{% trans "Dashboard" %}</h2>
     {% if user.is_authenticated %}
-        <p> Login Successful.</p>
-        <p>Welcome, Commander {{ user.username}}!</p>
-        <p>Are you ready to start building your armies?</p>
-        <a href="{% url 'account_logout' %}">Sign Out</a>
+        <p id="welcome-text">Welcome, Commander <span id="username">{{ user.username}}.</span>
+        </p>
+        <div class="dashboard-button">
+          <a href="{% url 'account_change_password' %}">
+            <button type="submit" class="button">
+              <span class="decorator top left"></span>
+              <span class="decorator top right"></span>
+              <span class="decorator bottom left"></span>
+              <span class="decorator bottom right"></span>
+              <span>Change Password</span>
+            </button>
+          </a>
+          <a href="{% url 'account_logout' %}">
+            <button type="submit" id="dash-logout" class="button">
+              <span class="decorator top left"></span>
+              <span class="decorator top right"></span>
+              <span class="decorator bottom left"></span>
+              <span class="decorator bottom right"></span>
+              <span>Logout</span>
+            </button>
+          </a>
+        </div>
     {% else %}
         <p>Are you ready to start building your armies?</p>
-        <p>Please <a href="{% url 'account_login' %}">Login</a> or <a href="{% url 'account_login' %}">Register</a> first.</p>
-
+        <p class="end-dash">Please
+          <a href="{% url 'account_login' %}">
+            <span class="links">Login</span>
+          </a>
+           or
+          <a href="{% url 'account_signup' %}">
+            <span class="links">Register</span>
+          </a>
+           first.
+         </p>
     {% endif %}
+  </div>
 </div>
 {% endblock %}
