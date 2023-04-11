@@ -1,0 +1,18 @@
+{% extends "army_builder/layout/base.html" %}
+
+{% load i18n %}
+
+{% block content %}
+<div>
+    {% if user.is_authenticated %}
+        <p> Login Successful.</p>
+        <p>Welcome, Commander {{ user.username}}!</p>
+        <p>Are you ready to start building your armies?</p>
+        <a href="{% url 'account_logout' %}">Sign Out</a>
+    {% else %}
+        <p>Are you ready to start building your armies?</p>
+        <p>Please <a href="{% url 'account_login' %}">Login</a> or <a href="{% url 'account_login' %}">Register</a> first.</p>
+
+    {% endif %}
+</div>
+{% endblock %}
