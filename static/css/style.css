@@ -16,19 +16,6 @@ body {
     color: #fbfbfb;
 }
 
-section {
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-    position: relative;
-    overflow: hidden;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    box-sizing: border-box;
-    padding: 100px 0px;
-}
-
 /* Headings */
 
 h1,
