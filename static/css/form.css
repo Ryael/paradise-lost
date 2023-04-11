@@ -50,7 +50,8 @@
 }
 
 #login-form input,
-#signup-form input {
+#signup-form input,
+#password-change input {
   display: block;
   margin: 15px auto;
   background: none;
@@ -63,7 +64,8 @@
 }
 
 #login-form p,
-#signup-form p {
+#signup-form p,
+#password-change p {
   text-align: left;
   color: #ccc;
   margin-bottom: 15px;
@@ -77,7 +79,8 @@
 }
 
 #login-form label,
-#signup-form label {
+#signup-form label,
+#password-change label {
   margin-left: 30px;
 }
 
@@ -102,6 +105,10 @@
   display: flex;
   justify-content: center;
   margin-bottom: 44px;
+}
+
+#password-change #end-form {
+  margin-bottom: 59px;
 }
 
 #end-form a {
@@ -129,9 +136,16 @@
 }
 
 #login-form ul,
-#signup-form ul {
+#signup-form ul,
+#dashboard ul,
+#password-change ul {
   color: #ccc;
   list-style: none;
   margin: 60px 30px;
-  text-align: left;
+}
+
+/* Dashboard Messages */
+
+#dashboard-messages {
+  display: none;
 }
