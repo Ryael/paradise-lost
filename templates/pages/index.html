@@ -9,17 +9,31 @@
     Build Your <br>
     <span class="rotating-text"></span>
   </h2>
+  {% if user.is_authenticated %}
   <div id="cta-button">
-  <a href="{% url 'account_signup' %}">
-    <button type="submit" class="button">
-      <span class="decorator top left"></span>
-      <span class="decorator top right"></span>
-      <span class="decorator bottom left"></span>
-      <span class="decorator bottom right"></span>
-      <span>Enlist Now</span>
-    </button>
+    <a href="{% url 'account_signup' %}">
+      <button type="submit" class="button">
+        <span class="decorator top left"></span>
+        <span class="decorator top right"></span>
+        <span class="decorator bottom left"></span>
+        <span class="decorator bottom right"></span>
+        <span>Dashboard &raquo;</span>
+      </button>
+    </a>
+  </div>
+  {% else %}
+  <div id="cta-button">
+    <a href="{% url 'account_signup' %}">
+      <button type="submit" class="button">
+        <span class="decorator top left"></span>
+        <span class="decorator top right"></span>
+        <span class="decorator bottom left"></span>
+        <span class="decorator bottom right"></span>
+        <span>Enlist Now</span>
+      </button>
   </a>
   </div>
+  {% endif %}
 </div>
 <div id="hero-video">
   <video playsinline autoplay muted loop poster="placeholder.jpg" id="bgvideo" width="1920" height="1080">
