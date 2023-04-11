@@ -28,7 +28,7 @@ class Army(BaseModel):
     class Meta:
         verbose_name_plural = "Armies"
 
-    ruleset = models.ForeignKey(Ruleset, on_delete=models.CASCADE)
+    ruleset = models.ForeignKey(Ruleset, on_delete=models.CASCADE, null=False, blank=False)
 
 class Ability(BaseModel):
     """
@@ -58,13 +58,13 @@ class Wargear(BaseModel):
     armor_penetration = models.CharField(max_length=3)
     damage = models.CharField(max_length=5)
     points_cost = models.SmallIntegerField(default=0, null=False, blank=False)
-    ability = models.ForeignKey(Ability, on_delete=models.CASCADE, null=True)
+    ability = models.ForeignKey(Ability, on_delete=models.CASCADE, null=True, blank=True)
 
 class Unit(BaseModel):
     """
     Stores unit's unique characteristics.
     """
-    army = models.ForeignKey(Army, on_delete=models.CASCADE)
+    army = models.ForeignKey(Army, on_delete=models.CASCADE, null=False, blank=False)
     move = models.CharField(max_length=3)
     weapon_skill = models.CharField(max_length=3)
     ballistics_skill = models.CharField(max_length=3)
