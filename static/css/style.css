@@ -504,7 +504,6 @@ video {
   padding: 20px 88px;
 }
 
-
 #username {
   color: #fff;
   font-weight: 500;
@@ -512,4 +511,29 @@ video {
 
 #dashboard > #welcome-text {
   margin-bottom: 74px;
+}
+
+/* Change Password */
+
+#password-change {
+  margin: 50px 0 120px 0;
+  height: fit-content;
+  position: relative;
+  width: 400px;
+  text-align: center;
+  background: linear-gradient(0deg, rgba(245, 213, 70, 0.1) 0%, rgba(17, 17, 17, 0) 100%);
+  border: 1px #ccc solid;
+}
+
+#password-change h2 {
+  margin: 94px 0px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  line-height: 2.5rem;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+#change-pw {
+  padding: 20px 88px;
 }
