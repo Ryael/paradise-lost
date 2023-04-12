@@ -191,6 +191,16 @@ video {
   51%, 100% {
     opacity: 1; } }
 
+#dash-logout,
+#change-pw  {
+  padding: 20px 88px;
+  z-index: 0;
+}
+
+#dash-changepw {
+  z-index: 0;
+}
+
 /* Navigation Menu */
 
 #menu {
@@ -500,10 +510,6 @@ video {
   flex-direction: column;
 }
 
-#dash-logout {
-  padding: 20px 88px;
-}
-
 #username {
   color: #fff;
   font-weight: 500;
@@ -532,8 +538,4 @@ video {
   line-height: 2.5rem;
   margin-right: 40px;
   margin-left: 40px;
-}
-
-#change-pw {
-  padding: 20px 88px;
 }
