@@ -2,7 +2,7 @@
 
 A website for managing armies for tabletop board gaming.
 
-[Paradise Lost - Live Website](https://avarice-txt.herokuapp.com/)
+[Paradise Lost - Live Website](https://paradise-lost-app.herokuapp.com/)
 
 ![Stars - Badge](https://badgen.net/github/stars/Ryael/avarice) ![Watchers - Badge](https://badgen.net/github/watchers/Ryael/avarice) ![Issues - Badge](https://badgen.net/github/issues/Ryael/avarice)
 
