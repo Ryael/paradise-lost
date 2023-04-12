@@ -60,6 +60,12 @@ class Wargear(BaseModel):
     points_cost = models.SmallIntegerField(default=0, null=False, blank=False)
     ability = models.ForeignKey(Ability, on_delete=models.CASCADE, null=True, blank=True)
 
+class Keyword(BaseModel):
+    """
+    Stores unit keywords.
+    """
+
+
 class Unit(BaseModel):
     """
     Stores unit's unique characteristics.
@@ -75,8 +81,8 @@ class Unit(BaseModel):
     leadership = models.CharField(max_length=3)
     armour_save = models.CharField(max_length=3)
     max_units = models.CharField(max_length=3)
-    keywords = models.TextField()
     points_cost = models.SmallIntegerField(default=0, null=False, blank=False)
     specialisms = models.ManyToManyField(Specialism)
     wargear = models.ManyToManyField(Wargear)
     abilities = models.ManyToManyField(Ability)
+    keywords = models.ManyToManyField(Keyword)
