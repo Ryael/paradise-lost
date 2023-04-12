@@ -45,6 +45,18 @@ class Specialism(BaseModel):
     """
     abilities = models.ManyToManyField(Ability)
 
+class WeaponProfile(BaseModel):
+    """
+    Stores weapon statistics.
+    """
+    range = models.CharField(max_length=4)
+    type = models.CharField(max_length=50)
+    strength = models.CharField(max_length=3)
+    armor_penetration = models.CharField(max_length=3)
+    damage = models.CharField(max_length=5)
+    ability = models.ForeignKey(Ability, on_delete=models.CASCADE, null=True, blank=True)
+
+
 class Wargear(BaseModel):
     """
     Stores wargear statistics.
@@ -52,19 +64,14 @@ class Wargear(BaseModel):
     class Meta:
         verbose_name_plural = "Wargear"
 
-    range = models.CharField(max_length=4)
-    type = models.CharField(max_length=50)
-    strength = models.CharField(max_length=3)
-    armor_penetration = models.CharField(max_length=3)
-    damage = models.CharField(max_length=5)
     points_cost = models.SmallIntegerField(default=0, null=False, blank=False)
     ability = models.ForeignKey(Ability, on_delete=models.CASCADE, null=True, blank=True)
+    weapon_profiles = models.ForeignKey(WeaponProfile, on_delete=models.CASCADE, null=True, blank=True)
 
 class Keyword(BaseModel):
     """
     Stores unit keywords.
     """
-
 
 class Unit(BaseModel):
     """
