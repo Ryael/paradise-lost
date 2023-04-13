@@ -73,13 +73,6 @@
   margin-bottom: 15px;
 }
 
-/*#password-reset #body-form p,
-#password-reset #end-form p {
-  text-align: left;
-  color: #ccc;
-  margin-bottom: 15px;
-}*/
-
 #logout-form p {
   display: flex;
   justify-content: center;
@@ -111,10 +104,27 @@
   z-index: 0;
 }
 
+#change-pw-key {
+  margin: 20px 0 51px 0;
+  padding: 20px 88px;
+  z-index: 0;
+}
+
+#change-pw-key-done {
+  margin: 20px 0 51px 0;
+  padding: 20px 140px;
+  z-index: 0;
+}
+
 #body-form {
   text-align: left;
   color: #ccc;
   margin: 0px 30px 26px 30px;
+}
+
+#login-form > #body-form > p {
+  margin: 11px 30px 19px 30px;
+  text-align: center;
 }
 
 #end-form {
@@ -123,22 +133,39 @@
   margin: 11px 30px 19px 30px;
 }
 
+#mid-form {
+  margin: 11px 30px 4px 30px;
+}
+
 #password-change #end-form,
 #password-reset #end-form {
   margin: 11px 30px 19px 30px;
 }
 
-#end-form a {
+#bad-token {
+    margin: 11px 30px 26px 30px;
+}
+
+#end-form a,
+#body-form a,
+#mid-form a,
+#bad-token a {
   color: #ccc;
   text-decoration: none;
 }
 
-#end-form span:hover {
+#end-form span:hover,
+#body-form span:hover,
+#mid-form span:hover,
+#bad-token span:hover {
   color: #fff;
   transition: 0.2s ease-in-out;
 }
 
-#end-form span {
+#end-form span,
+#body-form span,
+#mid-form span,
+#bad-token span {
   color: #fd9c31;
   transition: 0.2s ease-in-out;
 }
@@ -155,10 +182,19 @@
 #login-form ul,
 #signup-form ul,
 #dashboard ul,
-#password-change ul {
+#password-change ul,
+#password-reset ul {
   color: #ccc;
   list-style: none;
   margin: 60px 30px;
+}
+
+#login-form li,
+#signup-form li,
+#dashboard li,
+#password-change li,
+#password-reset li {
+  padding: 10px 0px;
 }
 
 /* Dashboard Messages */
