@@ -9,7 +9,7 @@ class BaseModel(models.Model):
     class Meta:
         abstract = True
 
-    name = models.CharField(null=False, blank=False, max_length=50)
+    name = models.CharField(null=False, blank=False, max_length=255)
     created_at = models.DateTimeField(auto_now_add=True)
     modified_at = models.DateTimeField(auto_now=True)
 
