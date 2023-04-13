@@ -39,12 +39,6 @@ class Ability(BaseModel):
 
     rule = models.TextField()
 
-class Specialism(BaseModel):
-    """
-    Stores specialism information.
-    """
-    abilities = models.ManyToManyField(Ability)
-
 class WeaponProfile(BaseModel):
     """
     Stores weapon statistics.
@@ -77,6 +71,12 @@ class Option(BaseModel):
     wargear = models.ManyToManyField(Wargear, blank=True)
     nested_options = models.ManyToManyField("self", blank=True)
 
+class Specialism(BaseModel):
+    """
+    Stores specialism information.
+    """
+    abilities = models.ManyToManyField(Option)
+
 class Keyword(BaseModel):
     """
     Stores unit keywords.
@@ -99,6 +99,6 @@ class Unit(BaseModel):
     max_units = models.CharField(max_length=3)
     points_cost = models.SmallIntegerField(default=0, null=False, blank=False)
     specialisms = models.ManyToManyField(Specialism)
-    wargear = models.ManyToManyField(Wargear)
+    wargear = models.ManyToManyField(Option)
     abilities = models.ManyToManyField(Ability)
     keywords = models.ManyToManyField(Keyword)
