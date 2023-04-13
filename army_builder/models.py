@@ -30,6 +30,15 @@ class Army(BaseModel):
 
     ruleset = models.ForeignKey(Ruleset, on_delete=models.CASCADE, null=False, blank=False)
 
+class Roster(BaseModel):
+    """
+    Stores user rosters.
+    """
+    ruleset = models.ForeignKey(Ruleset, on_delete=models.CASCADE, null=False, blank=False)
+    army = models.ForeignKey(Army, on_delete=models.CASCADE, null=False, blank=False)
+    points_max = models.SmallIntegerField(default="0", null=False, blank=False)
+    serialised_roster = models.TextField()
+
 class Ability(BaseModel):
     """
     Stores ability rules.
