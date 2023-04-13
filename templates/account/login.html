@@ -22,7 +22,7 @@
         <span class="decorator bottom right"></span>
       </button>
     </form>
-    <div id="end-form">
+    <div id="body-form">
       <p>
         {% blocktrans %}
         Don't have an account?
@@ -30,6 +30,14 @@
           <span>Sign up.</span>
         </a>
         {% endblocktrans %}
+      </p>
+    </div>
+    <div id="end-form">
+      <p>
+        Forgot your password?
+        <a href="{% url 'account_reset_password' %}">
+          <span>Reset it.</span>
+        </a>
       </p>
     </div>
   </div>
