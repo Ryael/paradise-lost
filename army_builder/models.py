@@ -66,7 +66,7 @@ class Wargear(BaseModel):
 
     points_cost = models.SmallIntegerField(default=0, null=False, blank=False)
     ability = models.ForeignKey(Ability, on_delete=models.CASCADE, null=True, blank=True)
-    weapon_profiles = models.ForeignKey(WeaponProfile, on_delete=models.CASCADE, null=True, blank=True)
+    weapon_profiles = models.ManyToManyField(WeaponProfile, blank=True)
 
 class Option(BaseModel):
     """
