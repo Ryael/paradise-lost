@@ -68,6 +68,15 @@ class Wargear(BaseModel):
     ability = models.ForeignKey(Ability, on_delete=models.CASCADE, null=True, blank=True)
     weapon_profiles = models.ForeignKey(WeaponProfile, on_delete=models.CASCADE, null=True, blank=True)
 
+class Option(BaseModel):
+    """
+    Stores options for user selection.
+    """
+    no_to_select = models.SmallIntegerField(default=-1, null=False, blank=False)
+    abilities = models.ManyToManyField(Ability, blank=True)
+    wargear = models.ManyToManyField(Wargear, blank=True)
+    nested_options = models.ManyToManyField("self", blank=True)
+
 class Keyword(BaseModel):
     """
     Stores unit keywords.
