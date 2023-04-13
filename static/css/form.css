@@ -1,4 +1,4 @@
-/* Login, Signup, and Logout */
+/* Login, Signup, Logout, Password Change, Password Reset */
 
 #form-container {
   display: flex;
@@ -51,7 +51,8 @@
 
 #login-form input,
 #signup-form input,
-#password-change input {
+#password-change input,
+#password-reset input {
   display: block;
   margin: 15px auto;
   background: none;
@@ -65,11 +66,19 @@
 
 #login-form p,
 #signup-form p,
-#password-change p {
+#password-change p,
+#password-reset p {
   text-align: left;
   color: #ccc;
   margin-bottom: 15px;
 }
+
+/*#password-reset #body-form p,
+#password-reset #end-form p {
+  text-align: left;
+  color: #ccc;
+  margin-bottom: 15px;
+}*/
 
 #logout-form p {
   display: flex;
@@ -80,7 +89,8 @@
 
 #login-form label,
 #signup-form label,
-#password-change label {
+#password-change label,
+#password-reset label {
   margin-left: 30px;
 }
 
@@ -101,6 +111,12 @@
   z-index: 0;
 }
 
+#body-form {
+  text-align: left;
+  color: #ccc;
+  margin: 0 30px;
+}
+
 #end-form {
   display: flex;
   justify-content: center;
@@ -109,6 +125,10 @@
 
 #password-change #end-form {
   margin-bottom: 59px;
+}
+
+#password-reset #end-form {
+  margin: 0 30px 59px 30px;
 }
 
 #end-form a {

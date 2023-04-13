@@ -192,8 +192,13 @@ video {
     opacity: 1; } }
 
 #dash-logout,
-#change-pw  {
+#change-pw {
   padding: 20px 88px;
+  z-index: 0;
+}
+
+#reset-pw {
+  padding: 20px 82px;
   z-index: 0;
 }
 
@@ -521,7 +526,8 @@ video {
 
 /* Change Password */
 
-#password-change {
+#password-change,
+#password-reset {
   margin: 50px 0 120px 0;
   height: fit-content;
   position: relative;
@@ -531,7 +537,8 @@ video {
   border: 1px #ccc solid;
 }
 
-#password-change h2 {
+#password-change h2,
+#password-reset h2 {
   margin: 94px 0px;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
