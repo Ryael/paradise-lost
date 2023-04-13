@@ -157,3 +157,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Email Authentication
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
+
+# Email Host
+
+SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
+
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'apikey' # this is exactly the value 'apikey'
+EMAIL_HOST_PASSWORD = SENDGRID_API_KEY
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = "noreply@siibox.ie"
