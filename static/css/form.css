@@ -114,21 +114,18 @@
 #body-form {
   text-align: left;
   color: #ccc;
-  margin: 0 30px;
+  margin: 0px 30px 26px 30px;
 }
 
 #end-form {
   display: flex;
   justify-content: center;
-  margin-bottom: 44px;
+  margin: 11px 30px 19px 30px;
 }
 
-#password-change #end-form {
-  margin-bottom: 59px;
-}
-
+#password-change #end-form,
 #password-reset #end-form {
-  margin: 0 30px 59px 30px;
+  margin: 11px 30px 19px 30px;
 }
 
 #end-form a {
