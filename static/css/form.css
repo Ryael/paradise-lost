@@ -202,3 +202,61 @@
 #dashboard-messages {
   display: none;
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 500px) {
+
+#logout-form,
+#login-form,
+#signup-form,
+#password-reset,
+#password-change,
+#dashboard,
+#roster-container {
+  width: 80%;
+  }
+
+#roster-container h2 {
+  padding: 0 30px;
+}
+
+#login-form input,
+#signup-form input,
+#password-reset input,
+#password-change input {
+  width: 65%;
+}
+
+#login-form label,
+#signup-form label,
+#password-reset label,
+#password-change label {
+  margin-left: 15%;
+}
+
+#login-form #id_remember {
+  margin: -17px 0px 0px 80px;
+}
+
+#logout-form .button,
+#login-form .button,
+#signup-form .button,
+#change-pw-key-done {
+  padding:20px 70px
+  }
+
+#reset-pw,
+#change-pw,
+#change-pw-key,
+#dash-changepw  {
+  padding: 20px;
+}
+
+#dash-changepw {
+  padding: 20px 40px;
+}
+
+
+
+}
