@@ -623,6 +623,14 @@ table i:hover {
   transition: 0.2s ease-in-out;
 }
 
+/* About Page */
+
+.about-text {
+  text-align: left;
+  color: #ccc;
+  margin: 0px 30px 26px 30px;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 700px) {
@@ -749,3 +757,4 @@ td:last-child {
 }
 
 }
+
