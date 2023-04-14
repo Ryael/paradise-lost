@@ -6,22 +6,22 @@
     <h2>Rosters</h2>
       <table cellspacing="0">
           <th>ID</th>
-          <th>Action</th>
           <th>Name</th>
           <th>Ruleset</th>
           <th>Army</th>
           <th>Points</th>
+          <th></th>
           {% for roster in rosters %}
             <tr>
               <td>#{{ roster.id }}</td>
-              <td>
-                <a href="/view"><i class="fa-regular fa-eye"></i></a>
-                <a href="/edit"><i class="fa-solid fa-pen last"></i></a>
-              </td>
               <td>{{ roster.name }}</td>
               <td>{{ roster.ruleset.name }}</td>
               <td>{{ roster.army.name}}</td>
               <td>{{ roster.points_max }}</td>
+              <td>
+                <a href="/view"><i class="fa-regular fa-eye"></i></a>
+                <a href="/edit"><i class="fa-solid fa-pen last"></i></a>
+              </td>
             </tr>
           {% endfor %}
       </table>
