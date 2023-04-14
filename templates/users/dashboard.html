@@ -19,6 +19,15 @@
         </div>
         {% endif %}
         <div class="dashboard-button">
+          <a href="{% url 'roster-list' %}">
+            <button type="submit" id="my-rosters" class="button">
+              <span class="decorator top left"></span>
+              <span class="decorator top right"></span>
+              <span class="decorator bottom left"></span>
+              <span class="decorator bottom right"></span>
+              <span>My Rosters</span>
+            </button>
+          </a>
           <a href="{% url 'account_change_password' %}">
             <button type="submit" id="dash-changepw" class="button">
               <span class="decorator top left"></span>
