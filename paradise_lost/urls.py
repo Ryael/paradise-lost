@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from army_builder.views import get_index, get_dashboard, get_roster_list
+from army_builder.views import get_index, get_dashboard, get_roster_list, get_about
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -25,6 +25,7 @@ urlpatterns = [
     path("", get_index, name="index"),
     path("users/dashboard", get_dashboard, name="dashboard"),
     path("accounts/", include("allauth.urls")),
-    path("rosters/", get_roster_list, name="roster-list")
+    path("rosters/", get_roster_list, name="roster-list"),
+    path("about/", get_about, name="about")
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

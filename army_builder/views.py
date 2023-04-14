@@ -17,3 +17,7 @@ def get_roster_list(request):
     }
 
     return render(request, "army_builder/rosters/view.html", context)
+
+def get_about(request):
+    return render(request, "pages/about.html")
+
