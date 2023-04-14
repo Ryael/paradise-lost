@@ -456,7 +456,8 @@ video {
 
 /* User Dashboard */
 
-#dashboard-container {
+#dashboard-container,
+#roster-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -545,4 +546,211 @@ video {
   line-height: 2.5rem;
   margin-right: 40px;
   margin-left: 40px;
+}
+
+/* Roster */
+
+#roster {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#roster h2 {
+  margin: 94px 0px;
+  padding: 0 80px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  line-height: 2.5rem;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+#roster-container {
+  flex-direction: column;
+  margin: 50px 0 120px 0;
+  height: fit-content;
+  position: relative;
+  width: 800px;
+  text-align: center;
+  background: linear-gradient(0deg, rgba(245, 213, 70, 0.1) 0%, rgba(17, 17, 17, 0) 100%);
+  border: 1px #ccc solid;
+}
+
+table {
+  width: 80%;
+  margin-bottom: 50px;
+  border: 1px #fd9c31 solid;
+  border-radius: 5px;
+}
+
+table td, table th {
+  color: #ccc;
+  padding: 10px;
+}
+
+table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+table th {
+  background-color: fff;
+  font-weight: 600;
+}
+
+table tr:nth-child(2n) {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+table tr:nth-child(2n+1) {
+  background: rgba(0, 0, 0, 0.23);
+}
+
+table i {
+  color: #fd9c31;
+  text-decoration: none;
+  padding-right: 5px;
+  transition: 0.2s ease-in-out;
+}
+
+table .last {
+  padding-right: 0px;
+}
+
+table i:hover {
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 700px) {
+
+table {
+  width: auto;
+  border: none;
+  }
+
+table tr {
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px #fd9c31 solid;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+table tr:nth-child(2n) {
+  background: rgba(0, 0, 0, 0.0);
+}
+
+table tr:nth-child(2n+1) {
+  background: rgba(0, 0, 0, 0.0);
+}
+
+  table, tr, td {
+  display: block;
+}
+
+  td:first-child {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 75px;
+}
+
+  tr:first-child {
+    display: none;
+}
+
+  td:not(:first-child) {
+    clear: both;
+    margin-left: 100px;
+    padding: 4px 20px 4px 90px;
+    position: relative;
+    text-align: left;
+}
+
+  td:not(:first-child):before {
+    color: #fff;
+    font-weight: 600;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+}
+
+  td:nth-child(2):before {
+    content: "Action:";
+}
+
+  td:nth-child(3):before {
+    content: "Name:";
+}
+
+  td:nth-child(4):before {
+    content: "Ruleset:";
+}
+
+  td:nth-child(5):before {
+    content: "Army:";
+}
+
+  td:nth-child(6):before {
+    content: "Points:";
+}
+
+  tr {
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 1px #fd9c31 dashed;
+}
+
+  tr:first-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  table {
+    border: none;
+  }
+
+  table td {
+    padding-bottom: 8px;
+  }
+
+  tr {
+    border: 1px #fd9c31 solid;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 0;
+    width: 200px;
+  }
+
+  td:first-child {
+    background-color: transparent;
+    border-bottom: 1px #fd9c31 dashed;
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+    width: auto;
+}
+
+  td:not(:first-child) {
+    margin: 0;
+    padding: 5px 1em;
+    width: 100%;
+}
+  td:not(:first-child):before {
+    font-size: 0.8em;
+    padding-top: 0.3em;
+    position: relative;
+}
+
+  td:nth-child(2):before {
+    content: "Action:";
+    display: flex;
+}
+
 }
