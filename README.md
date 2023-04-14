@@ -4,7 +4,7 @@ A website for managing armies for tabletop board gaming.
 
 [Paradise Lost - Live Website](https://paradise-lost-app.herokuapp.com/)
 
-![Stars - Badge](https://badgen.net/github/stars/Ryael/avarice) ![Watchers - Badge](https://badgen.net/github/watchers/Ryael/avarice) ![Issues - Badge](https://badgen.net/github/issues/Ryael/avarice)
+![Stars - Badge](https://badgen.net/github/stars/Ryael/paradise-lost) ![Watchers - Badge](https://badgen.net/github/watchers/Ryael/paradise-lost) ![Issues - Badge](https://badgen.net/github/issues/Ryael/avarice)
 
 Paradise Lost is a community-based platform to allow users to build and edit their armies, find people nearby to play with should they want to opt into displaying their location, and make friends!
 
@@ -37,31 +37,26 @@ For the intents and purpose of this project, Simon W. will be referred to as the
       - [Typography]
         - Font 1
         - Font 2
-4. [Agile Development Process] - Trello Kanban Board & Link. Links to agile.md (Covers sprints and Epics, User Stories, and etc) A sprint will be a day.
-5. [Features]
-  - Landing Page
-  - Logo
-  - Favicon
-  - Army
-    - Create
-    - Edit
-    - Delete
-    - Use Preset/Predefined
-  - __Find-an-Enemy__ - Find-A-Friend (Potential alternatives: Begin Conquest, Locate Adversary?): Use a spaceship or military vehichle Font Awesome icon
-  - Find commanders near you (Location based)
-  - __Form Alliance__ - Add friend
-  - __Open Communications__ - Direct Message
-  - __Commanders?__ - Term for users? Any alternatives?
-  - Sign in/Sign Out
-  - Modals
-  - Navbar
-  - Hero Images
-  - Instructions
-  - Main Page Content
-  - Error Pages
-  - Footer
-  - Members Only Page (What appears when user isn't logged in)
-6.  [Code](#code)
+3. [Agile Development Process] - Trello Kanban Board & Link. Links to agile.md (Covers sprints and Epics, User Stories, and etc) A sprint will be a day.
+4. [Features]
+    - Landing Page
+    - Logo
+    - Favicon
+    - Army
+      - Create
+      - Edit
+      - Delete
+      - Use Preset/Predefined
+    - Sign in/Sign Out
+    - Modals
+    - Navbar
+    - Hero Images
+    - Instructions
+    - Main Page Content
+    - Error Pages
+    - Footer
+    - Dashboard
+5.  [Code](#code)
     - [Commits](#commits)
     - [Folder Structure](#folder-structure)
     - [Constants](#constants)
@@ -71,18 +66,18 @@ For the intents and purpose of this project, Simon W. will be referred to as the
     - [Map Design](#map-design)
     - [YAML](#yaml)
     - [Data Model](#data-model)
-7. [Testing] (Link to Testing.MD)
+6. [Testing] (Link to Testing.MD)
   - Validation
     - [Python Validation](#python-validation)
     - [JS, HTML, CSS Validation]
   - Testing (Manual and User Stories)
   - Bugs
-8. [Future Updates](#future-updates)
-9. [Deployment](#deployment) (link to Deployment.md)
-10. [Technologies Used](#technologies-used)
+7. [Future Updates](#future-updates)
+8. [Deployment](#deployment) (link to Deployment.md)
+9. [Technologies Used](#technologies-used)
     - [Languages](#languages)
     - [Python Libraries](#python-libraries)
     - [Frameworks & Tools](#frameworks--tools)
-11. [Credits](#credits)
-12. [Acknowledgements](#acknowledgements)
+10. [Credits](#credits)
+11. [Acknowledgements](#acknowledgements)
 
