@@ -67,11 +67,11 @@ For the intents and purpose of this project, Simon W. will be referred to as the
     - [YAML](#yaml)
     - [Data Model](#data-model)
 6. [Testing] (Link to Testing.MD)
-  - Validation
-    - [Python Validation](#python-validation)
-    - [JS, HTML, CSS Validation]
-  - Testing (Manual and User Stories)
-  - Bugs
+    - Validation
+      - [Python Validation](#python-validation)
+      - [JS, HTML, CSS Validation]
+    - Testing (Manual and User Stories)
+    - Bugs
 7. [Future Updates](#future-updates)
 8. [Deployment](#deployment) (link to Deployment.md)
 9. [Technologies Used](#technologies-used)
