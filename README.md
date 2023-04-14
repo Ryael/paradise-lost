@@ -12,11 +12,9 @@ This is my fouth milestone project as part of Code Institute's Diploma in <stron
 
 This project was suggested to me by my very close friend and fellow full stack developer, Simon W. He initially pitched this idea with me working on the front-end and him creating the back-end using Crystal, which is a programming language with Ruby-like syntax and C-like speed. I agreed to this but wanted to use this idea for my profolio project 4 due to it being something I'm interested in and it fitting the assessment criteria in terms of scope. As such, the backend will be using Python and the Django web framework, whereas the front-end consists of the usual trifecta of HTML, CSS, and JavaScript.
 
-Inspired by Battle Scribe, which utilises an app approach and is available on both Google Play and Apple store (link to both). Unfortunately, many tabletop players have grown frustrated with there being close to no development in past few years and this has become a bit of an open niche and this will be my humble attempt to create a website that fills this niche and provides a hopefully useful service to any aspiring commanders.
+Inspired by [Battle Scribe](https://www.battlescribe.net/), which utilises an application approach and is available on Windows, Apple Story, and Google Play. Unfortunately, many tabletop players have grown frustrated with there being close to no development in past few years and this has become a bit of an open niche and this will be my humble attempt to create a website that fills this niche and provides a hopefully useful service to any aspiring commanders.
 
 For the intents and purpose of this project, Simon W. will be referred to as the client as he was the one that pitched the idea and it will be my goal to facilitate and actualise his vision.
-
-[Self Note: Expand below into one quick paragraph but go into detail on these in a features section]
 
 ## Table of Contents
 
@@ -81,3 +79,18 @@ For the intents and purpose of this project, Simon W. will be referred to as the
 10. [Credits](#credits)
 11. [Acknowledgements](#acknowledgements)
 
+# Planning Phase
+
+## Strategy
+
+### Site Aims
+
+Building an army for a tabletop war game is no small feat. Hobbyists have to buy unit models of a specific faction, assemble, paint, and organise them. If they then want to play against another person, they then have to transport them while making sure they don't get damaged.
+
+Admist all that, very game has its own ruleset. Oftentimes, most games have multiple. Put simply, there's more than one way to enjoy any particular game and this has led to the creation of various rulesets that cater to different demographics of players.
+
+Keeping track of rulesets is tricky because one each tends to be in-depth and is usually accompanied by some thick rulebooks. As such, it can be difficult to remember which unit belongs to which army for which ruleset, and so on. Many players have taken to note-taking in journals and the like, but that is one more thing to remember to bring whenever they need to travel for games.
+
+This application aims to streamline the process of players having to bring their physical notes everywhere. Instead, they can quickly and readily access their army rosters from the comfort of their mobile phones or computers.
+
+Here they can create their army rosters, view them at their leisure, modify them as required, and even delete them should become unnecessary. Wherever you go, your army information is always with you.
