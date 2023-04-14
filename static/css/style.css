@@ -680,22 +680,18 @@ table tr:nth-child(2n+1) {
 }
 
   td:nth-child(2):before {
-    content: "Action:";
-}
-
-  td:nth-child(3):before {
     content: "Name:";
 }
 
-  td:nth-child(4):before {
+  td:nth-child(3):before {
     content: "Ruleset:";
 }
 
-  td:nth-child(5):before {
+  td:nth-child(4):before {
     content: "Army:";
 }
 
-  td:nth-child(6):before {
+  td:nth-child(5):before {
     content: "Points:";
 }
 
@@ -748,9 +744,8 @@ table tr:nth-child(2n+1) {
     position: relative;
 }
 
-  td:nth-child(2):before {
-    content: "Action:";
-    display: flex;
+td:last-child {
+  padding-bottom: 1rem;
 }
 
 }
