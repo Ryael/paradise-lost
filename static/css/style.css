@@ -716,6 +716,18 @@ table tr:nth-child(2n+1) {
 
 @media screen and (max-width: 500px) {
 
+  #hero-text {
+    font-size: 18px;
+  }
+
+  .rotating-text {
+    font-size: 25px;
+  }
+
+  #menu .main-navigation a {
+    font-size: 25px;
+  }
+
   table {
     border: none;
   }
