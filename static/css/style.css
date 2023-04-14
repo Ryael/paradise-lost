@@ -202,6 +202,11 @@ video {
   z-index: 0;
 }
 
+#my-rosters {
+  padding: 20px 71px;
+  z-index: 0;
+}
+
 #dash-changepw {
   z-index: 0;
 }
