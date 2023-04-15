@@ -18,7 +18,7 @@ def list_roster(request):
         "rosters": rosters,
     }
 
-    return render(request, "army_builder/rosters/view.html", context)
+    return render(request, "army_builder/rosters/roster-list.html", context)
 
 def create_roster(request):
 
@@ -28,7 +28,7 @@ def create_roster(request):
         form = RosterForm(request.POST)
         print(form.errors)
         if form.is_valid():
-            messages.success(request, "Roster created successfully.")
+            messages.success(request, 'Roster created successfully.')
             form.save()
             return redirect("roster-list")
 
@@ -37,6 +37,13 @@ def create_roster(request):
     }
 
     return render(request, "army_builder/rosters/create.html", context)
+
+def view_roster(request, id):
+    context = {}
+
+    context["data"] = Roster.objects.get(id = id)
+
+    return render(request, "army_builder/rosters/view.html", context)
 
 def edit_roster(request, id):
     roster = get_object_or_404(Roster, id = id)
@@ -57,6 +64,7 @@ def edit_roster(request, id):
     }
 
     return render(request, "army_builder/rosters/edit.html", context)
+
 
 def delete_roster(request, id):
     roster = get_object_or_404(Roster, id = id)
