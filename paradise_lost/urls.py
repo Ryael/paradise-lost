@@ -22,6 +22,7 @@ from army_builder.views import (get_index,
                                 get_dashboard,
                                 list_roster,
                                 create_roster,
+                                delete_roster,
                                 get_about,
                                 edit_roster)
 
@@ -33,5 +34,6 @@ urlpatterns = [
     path("rosters/", list_roster, name="roster-list"),
     path("rosters/create", create_roster, name="create-roster"),
     path("rosters/<id>/edit", edit_roster, name="edit-roster"),
+    path("rosters/<id>/delete", delete_roster, name="delete-roster"),
     path("about/", get_about, name="about")
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
