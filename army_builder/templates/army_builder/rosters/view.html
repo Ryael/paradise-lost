@@ -27,7 +27,8 @@
             <td>{{ roster.points_max }}</td>
             <td>
               <a href="/view"><i class="fa-regular fa-eye"></i></a>
-              <a href="{% url 'edit-roster' id=roster.id %}"><i class="fa-solid fa-pen last"></i></a>
+              <a href="{% url 'edit-roster' id=roster.id %}"><i class="fa-solid fa-pen"></i></a>
+              <a href="{% url 'delete-roster' id=roster.id %}"><i class="fa-solid fa-trash last"></i></a>
             </td>
           </tr>
         {% endfor %}
