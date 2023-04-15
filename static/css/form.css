@@ -116,6 +116,11 @@
   z-index: 0;
 }
 
+#create-roster {
+  margin: 20px 0 70px 0;
+  z-index: 0;
+}
+
 #body-form {
   text-align: left;
   color: #ccc;
@@ -183,7 +188,8 @@
 #signup-form ul,
 #dashboard ul,
 #password-change ul,
-#password-reset ul {
+#password-reset ul,
+#roster ul {
   color: #ccc;
   list-style: none;
   margin: 60px 30px;
