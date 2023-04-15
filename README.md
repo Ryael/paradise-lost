@@ -101,10 +101,10 @@ The following was an extensive list of features that were brainstormed between S
 
 | Opportunity             | Importance  | Feasibility   |
 |------------------------ |------------ |-------------  |
-| Account Management      | 5           | 5             |
+| User Account Management      | 5           | 5             |
 | Friend System           | 1           | 2             |
 | Landing Page            | 5           | 5             |
-| User Login              | 5           | 5             |
+| User Login, Logout, Register              | 5           | 5             |
 | About Page              | 5           | 5             |
 | User Profile            | 1           | 1             |
 | Army Roster Management  | 5           | 4             |
@@ -122,7 +122,7 @@ As there is an imbalance of 5 points in the above score, 38 vs 35), there will h
 The above table has been further categorised in order to establish a clear vision of the MVP required while satisifying the above requirements.
 
 - UX **Must's**:
-  - User can login.
+  - User can login, logout, and register.
   - User can create an army roster.
   - User can edit an army roster.
   - User can view their army rosters.
