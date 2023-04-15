@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Roster
+from .forms import RosterForm
 
 # Create your views here.
 def get_index(request):
@@ -18,6 +19,22 @@ def get_roster_list(request):
 
     return render(request, "army_builder/rosters/view.html", context)
 
+def create_roster(request):
+
+    form = RosterForm()
+
+    if request.method == "POST":
+        form = RosterForm(request.POST)
+        print(form.errors)
+        if form.is_valid():
+            form.save()
+            return redirect("roster-list")
+
+    context = {
+        "form": form,
+    }
+
+    return render(request, "army_builder/rosters/create.html", context)
+
 def get_about(request):
     return render(request, "pages/about.html")
-
