@@ -182,8 +182,7 @@
 #body-form span,
 #mid-form span,
 #bad-token span,
-#roster-management span,
-.roster-text span {
+#roster-management span {
   color: #fd9c31;
   transition: 0.2s ease-in-out;
 }
@@ -248,8 +247,7 @@
   margin-bottom: 15px;
 }
 
-#roster-management .roster-text,
-.roster-text {
+#roster-management .roster-text {
   margin: 0px 30px 26px 30px;
   text-align: center;
 }
