@@ -56,7 +56,7 @@ def edit_roster(request, id):
         "form": form,
     }
 
-    return render(request, "army_builder/rosters/create.html", context)
+    return render(request, "army_builder/rosters/edit.html", context)
 
 def get_about(request):
     return render(request, "pages/about.html")
