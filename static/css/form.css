@@ -197,6 +197,48 @@
   padding: 10px 0px;
 }
 
+/* Roster */
+
+#roster-management input {
+  display: block;
+  margin: 15px auto;
+  background: none;
+  border: 1px #fd9c31 solid;
+  border-radius: 5px;
+  padding: 14px 10px;
+  width: 300px;
+  outline: none;
+  color: #fff;
+}
+
+#roster-management select {
+  display: block;
+  margin: 15px auto;
+  background: none;
+  border: 1px #fd9c31 solid;
+  border-radius: 5px;
+  padding: 14px 10px;
+  width: 320px;
+  outline: none;
+  color: #fff;
+}
+
+#roster-management p {
+  text-align: left;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+#roster-management label {
+  margin-left: 77px;
+}
+
+#roster-management button {
+  margin: 20px 0 51px 0;
+  padding: 20px 126px;
+  z-index: 0;
+}
+
 /* Dashboard Messages */
 
 #dashboard-messages {
