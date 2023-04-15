@@ -20,8 +20,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 from army_builder.views import (get_index,
                                 get_dashboard,
-                                get_roster_list,
-                                get_create_roster,
+                                list_roster,
+                                create_roster,
                                 get_about,
                                 edit_roster)
 
@@ -30,8 +30,8 @@ urlpatterns = [
     path("", get_index, name="index"),
     path("users/dashboard", get_dashboard, name="dashboard"),
     path("accounts/", include("allauth.urls")),
-    path("rosters/", get_roster_list, name="roster-list"),
-    path("rosters/create", get_create_roster, name="create-roster"),
+    path("rosters/", list_roster, name="roster-list"),
+    path("rosters/create", create_roster, name="create-roster"),
     path("rosters/<id>/edit", edit_roster, name="edit-roster"),
     path("about/", get_about, name="about")
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
