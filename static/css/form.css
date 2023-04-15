@@ -147,14 +147,22 @@
   margin: 11px 30px 19px 30px;
 }
 
+#roster-management #delete-roster,
+#roster-management #update-roster {
+  margin: 20px 0;
+  padding: 20px 126px;
+  z-index: 0;
+}
+
 #bad-token {
-    margin: 11px 30px 26px 30px;
+  margin: 11px 30px 26px 30px;
 }
 
 #end-form a,
 #body-form a,
 #mid-form a,
-#bad-token a {
+#bad-token a,
+#roster-management a {
   color: #ccc;
   text-decoration: none;
 }
@@ -162,7 +170,8 @@
 #end-form span:hover,
 #body-form span:hover,
 #mid-form span:hover,
-#bad-token span:hover {
+#bad-token span:hover,
+#roster-management span:hover {
   color: #fff;
   transition: 0.2s ease-in-out;
 }
@@ -170,7 +179,8 @@
 #end-form span,
 #body-form span,
 #mid-form span,
-#bad-token span {
+#bad-token span,
+#roster-management span {
   color: #fd9c31;
   transition: 0.2s ease-in-out;
 }
@@ -233,6 +243,11 @@
   text-align: left;
   color: #ccc;
   margin-bottom: 15px;
+}
+
+#roster-management .roster-text {
+  margin: 0px 30px 26px 30px;
+  text-align: center;
 }
 
 #roster-management label {
