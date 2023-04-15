@@ -24,10 +24,11 @@ For the intents and purpose of this project, Simon W. will be referred to as the
       - [Site Aims]
       - [Oppurtunities] - Feature & Viability Map
     - [Scope]
-    - [Structure]
-      - [Target Audience](#target-audience)
-      - [User Stories]
-      - [Dropped User Stories]
+3. [User Experience]
+    - [Target Audience](#target-audience)
+    - [User Stories]
+    - [Dropped User Stories]
+4. [User Interface]
     - [Wireframe & Database]
     - [Design]
       - [Theme/Images]
@@ -35,8 +36,8 @@ For the intents and purpose of this project, Simon W. will be referred to as the
       - [Typography]
         - Font 1
         - Font 2
-3. [Agile Development Process] - Trello Kanban Board & Link. Links to agile.md (Covers sprints and Epics, User Stories, and etc) A sprint will be a day.
-4. [Features]
+5. [Agile Development Process] - Trello Kanban Board & Link. Links to agile.md (Covers sprints and Epics, User Stories, and etc) A sprint will be a day.
+6. [Features]
     - Landing Page
     - Logo
     - Favicon
@@ -54,7 +55,7 @@ For the intents and purpose of this project, Simon W. will be referred to as the
     - Error Pages
     - Footer
     - Dashboard
-5.  [Code](#code)
+7.  [Code](#code)
     - [Commits](#commits)
     - [Folder Structure](#folder-structure)
     - [Constants](#constants)
@@ -64,20 +65,20 @@ For the intents and purpose of this project, Simon W. will be referred to as the
     - [Map Design](#map-design)
     - [YAML](#yaml)
     - [Data Model](#data-model)
-6. [Testing] (Link to Testing.MD)
+8. [Testing] (Link to Testing.MD)
     - Validation
       - [Python Validation](#python-validation)
       - [JS, HTML, CSS Validation]
     - Testing (Manual and User Stories)
     - Bugs
-7. [Future Updates](#future-updates)
-8. [Deployment](#deployment) (link to Deployment.md)
-9. [Technologies Used](#technologies-used)
+9. [Future Updates](#future-updates)
+10. [Deployment](#deployment) (link to Deployment.md)
+11. [Technologies Used](#technologies-used)
     - [Languages](#languages)
     - [Python Libraries](#python-libraries)
     - [Frameworks & Tools](#frameworks--tools)
-10. [Credits](#credits)
-11. [Acknowledgements](#acknowledgements)
+12. [Credits](#credits)
+13. [Acknowledgements](#acknowledgements)
 
 # Planning Phase
 
@@ -136,7 +137,7 @@ The above table has been further categorised in order to establish a clear visio
   - Killteam Ruleset.
   - Error pages.
 
-- UX **No's**:
+- UX **Should Not's**:
   - User profile.
   - Friend system.
   - Roster sharing.
