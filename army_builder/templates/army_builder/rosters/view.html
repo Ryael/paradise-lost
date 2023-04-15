@@ -16,9 +16,15 @@
             <td>{{ data.points_max }}</td>
           </tr>
     </table>
-    <p class="roster-text">
-      <a href="{% url 'roster-list' %}"><span>Back</span></a>
-    </p>
+    <a href="{% url 'roster-list' %}">
+      <button type="submit" id="create-roster" class="button">
+        <span class="decorator top left"></span>
+        <span class="decorator top right"></span>
+        <span class="decorator bottom left"></span>
+        <span class="decorator bottom right"></span>
+        <span>Return</span>
+      </button>
+    </a>
   </div>
 </div>
 
