@@ -158,7 +158,7 @@ The above table has been further categorised in order to establish a clear visio
 
   1. As an unregistered user, I want to quickly understand the purpose of this website so that I can see if I want to continue spending my time on this website and register.
 
-  2. As an unregistered user, I want to easily navigate the menu without getting lost so that I know this website is worth my time and won't lead to any frustrations.
+  2. As an unregistered user, I want to easily navigate the menu without getting lost by seeing the uniformity of each page so that I know this website is worth my time and won't lead to any frustrations.
 
   3. As an unregistered user, I want to quickly and easily learn more about the website and its purpose if I am unable to infer its purpose from the visuals and text alone, so that I can decide if registering for this website would be beneficial to me.
 
@@ -194,4 +194,24 @@ The above table has been further categorised in order to establish a clear visio
 
   16. As a site user, I want to be engaged by the user interface so that I know I will enjoy spending time building my rosters as I navigate the same menus repeatedly.
 
-  17. As a site user, I want to be shown responses from the websites upon i
+  17. As a site user, I want to be shown responses from the website upon interaction with it so that I know the creation, deletion, or update of my roster has been successful.
+
+  18. As a site user, I want to experience a unique and uniform design with appealing colours so that every part of the website stimulates a positive response.
+
+  19. As a site user, I want to be able to access the website from any screen size and still have a pleasant viewing experience so that I'm not restricted to only viewing this website on bigger screens.
+
+  20. As a site user, I want to be able to contact the admin via e-mail, find their GitHub project repository, or even find them on other socials like LinkedIn.
+
+#### Dropped
+
+Certain user stories were dropped as part of the agile process. They are as follows:
+
+  - As a registered user, I want to be able make a profile so that I can share my roster via a link.
+  - As a registered user, I want to be able to private my rosters so that they don't appear on my profile.
+  - As a registered user, I want to view other peoples' profiles so that I can view their rosters.
+  - As a regsitered user, I want to add other people as friends so that we can make rosters and play together.
+  - As a registered user, I want to delete a friend because they were very unsportsmanlike after beating me in a game.
+  - As a registered user, I want to find nearby active players so that we can meet-up and play games.
+
+  - As an admin, I want to add headings to the admin database tables so I can more quickly understand my data.
+  - As an admin, I want to filter the admin database tables so that I can more easily find the data I need.
