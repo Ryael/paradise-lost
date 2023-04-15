@@ -1,0 +1,25 @@
+{% extends "army_builder/layout/base.html" %}
+
+{% block content %}
+<div id="roster">
+  <div id="roster-container">
+    <div id="roster-management">
+      <h2>Delete Roster</h2>
+      <form action="" method="POST">
+          {% csrf_token %}
+
+          Are you sure you want to delete {{ roster.name }}?
+          <button type="submit" class="button">
+            <span class="decorator top left"></span>
+            <span class="decorator top right"></span>
+            <span class="decorator bottom left"></span>
+            <span class="decorator bottom right"></span>
+            Yes
+          </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
