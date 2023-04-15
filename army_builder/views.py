@@ -10,7 +10,7 @@ def get_index(request):
 def get_dashboard(request):
     return render(request, "users/dashboard.html")
 
-def get_roster_list(request):
+def list_roster(request):
 
     rosters = Roster.objects.all()
 
@@ -20,7 +20,7 @@ def get_roster_list(request):
 
     return render(request, "army_builder/rosters/view.html", context)
 
-def get_create_roster(request):
+def create_roster(request):
 
     form = RosterForm()
 
