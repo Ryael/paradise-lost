@@ -114,3 +114,31 @@ The following was an extensive list of features that were brainstormed between S
 | **Total**               | **38**      | **33**        |
 
 Feasibility is based on time and my current level of ability using languages.
+
+## Scope
+
+As there is an imbalance of 5 points in the above score, 38 vs 35), there will have to be trade-offs made due to the tight schedule of this project.
+
+The above table has been further categorised in order to establish a clear vision of the MVP required while satisifying the above requirements.
+
+- UX **Must's**:
+  - User can login.
+  - User can create an army roster.
+  - User can edit an army roster.
+  - User can view their army rosters.
+  - User can delete their army rosters.
+
+- UX **Should's**:
+  - User can use the forgot your password functionality.
+  - User can otherwise reset their password.
+  - Landing page.
+  - About page.
+  - Killteam Ruleset.
+  - Error pages.
+
+- UX **No's**:
+  - User profile.
+  - Friend system.
+  - Roster sharing.
+  - User can change their e-mail.
+
