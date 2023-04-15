@@ -8,14 +8,19 @@
       <form action="" method="POST">
           {% csrf_token %}
 
-          Are you sure you want to delete {{ roster.name }}?
-          <button type="submit" class="button">
+          <p class="roster-text">
+            Are you sure you want to delete {{ roster.name }}?
+          </p>
+          <button type="submit" class="button" id="delete-roster">
             <span class="decorator top left"></span>
             <span class="decorator top right"></span>
             <span class="decorator bottom left"></span>
             <span class="decorator bottom right"></span>
             Yes
           </button>
+          <p class="roster-text">
+            <a href="{% url 'roster-list' %}"><span>Cancel</span></a>
+          </p>
       </form>
     </div>
   </div>
