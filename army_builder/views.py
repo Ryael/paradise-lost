@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from .models import Roster
 from .forms import RosterForm
@@ -20,7 +20,7 @@ def get_roster_list(request):
 
     return render(request, "army_builder/rosters/view.html", context)
 
-def create_roster(request):
+def get_create_roster(request):
 
     form = RosterForm()
 
@@ -33,6 +33,26 @@ def create_roster(request):
             return redirect("roster-list")
 
     context = {
+        "form": form,
+    }
+
+    return render(request, "army_builder/rosters/create.html", context)
+
+def edit_roster(request, id):
+    roster = get_object_or_404(Roster, id = id)
+
+    form = RosterForm(instance=roster)
+
+    if request.POST:
+        form = RosterForm(request.POST)
+        print(form.errors)
+        if form.is_valid():
+            messages.success(request, 'Roster edited successfully.')
+            form.save()
+            return redirect("roster-list")
+
+    context = {
+        "roster": roster,
         "form": form,
     }
 
