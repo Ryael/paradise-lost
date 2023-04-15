@@ -94,3 +94,23 @@ Keeping track of rulesets is tricky because one each tends to be in-depth and is
 This application aims to streamline the process of players having to bring their physical notes everywhere. Instead, they can quickly and readily access their army rosters from the comfort of their mobile phones or computers.
 
 Here they can create their army rosters, view them at their leisure, modify them as required, and even delete them should become unnecessary. Wherever you go, your army information is always with you.
+
+### Opportunities
+
+The following was an extensive list of features that were brainstormed between Simon W. and I during the conceptualistion of the website. A feasibility chart was deemed important so as to prioritise the scope of the intended strategy.
+
+| Opportunity             | Importance  | Feasibility   |
+|------------------------ |------------ |-------------  |
+| Account Management      | 5           | 5             |
+| Friend System           | 1           | 2             |
+| Landing Page            | 5           | 5             |
+| User Login              | 5           | 5             |
+| About Page              | 5           | 5             |
+| User Profile            | 1           | 1             |
+| Army Roster Management  | 5           | 4             |
+| Roster Sharing          | 1           | 3             |
+| Killteam 2018 Ruleset   | 5           | 3             |
+| Error Pages             | 5           | 5             |
+| **Total**               | **38**      | **33**        |
+
+Feasibility is based on time and my current level of ability using languages.
