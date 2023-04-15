@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.contrib import messages
 from .models import Roster
 from .forms import RosterForm
 
@@ -27,6 +28,7 @@ def create_roster(request):
         form = RosterForm(request.POST)
         print(form.errors)
         if form.is_valid():
+            messages.success(request, 'Roster created successfully.')
             form.save()
             return redirect("roster-list")
 
