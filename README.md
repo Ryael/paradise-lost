@@ -80,11 +80,11 @@ For the intents and purpose of this project, Simon W. will be referred to as the
 12. [Credits](#credits)
 13. [Acknowledgements](#acknowledgements)
 
-# Planning Phase
+## Planning Phase
 
-## Strategy
+### Strategy
 
-### Site Aims
+#### Site Aims
 
 Building an army for a tabletop war game is no small feat. Hobbyists have to buy unit models of a specific faction, assemble, paint, and organise them. If they then want to play against another person, they then have to transport them while making sure they don't get damaged.
 
@@ -96,7 +96,7 @@ This application aims to streamline the process of players having to bring their
 
 Here they can create their army rosters, view them at their leisure, modify them as required, and even delete them should become unnecessary. Wherever you go, your army information is always with you.
 
-### Opportunities
+#### Opportunities
 
 The following was an extensive list of features that were brainstormed between Simon W. and I during the conceptualistion of the website. A feasibility chart was deemed important so as to prioritise the scope of the intended strategy.
 
@@ -116,7 +116,7 @@ The following was an extensive list of features that were brainstormed between S
 
 Feasibility is based on time and my current level of ability using languages.
 
-## Scope
+### Scope
 
 As there is an imbalance of 5 points in the above score, 38 vs 35), there will have to be trade-offs made due to the tight schedule of this project.
 
@@ -143,3 +143,55 @@ The above table has been further categorised in order to establish a clear visio
   - Roster sharing.
   - User can change their e-mail.
 
+## User Experience
+
+### Target Audience
+
+  - People who are looking to keep track of their rosters for table-top war gaming.
+  - People who are looking to replace their physical rosters notes with digital storage.
+  - Fans of tabletop games.
+  - Fans of sci-fi concepts.
+
+### User Stories
+
+#### Unregistered Users
+
+  1. As an unregistered user, I want to quickly understand the purpose of this website so that I can see if I want to continue spending my time on this website and register.
+
+  2. As an unregistered user, I want to easily navigate the menu without getting lost so that I know this website is worth my time and won't lead to any frustrations.
+
+  3. As an unregistered user, I want to quickly and easily learn more about the website and its purpose if I am unable to infer its purpose from the visuals and text alone, so that I can decide if registering for this website would be beneficial to me.
+
+  4. As an unregistered user, I want to be able to register for an account so that I can start building my army rosters.
+
+#### Registered Users
+
+  5. As a registered user, I want to be able to change my password should I forget so that I have ease of mind in knowing that I won't be locked out of my account.
+
+  6. As a registered user, I want to be able to manage my account by changing my password so that I can avoid any security breaches or implement a stronger password.
+
+  7. As a registered user, I want to be made aware of my of account management actions so that I know they have been successful.
+
+  8. As a registered user, I want to be able to access a user dashboard so that I have a base of operations for this website that's readily available.
+
+  9. As a registered user, I want to be able to create my roster so that I can view it later.
+
+  10. As a registered user, I want to be able to view my roster so that I can decide if it needs to have any changes made to it.
+
+  11. As a registered user, I want to be able to update my roster so that I can make sure it's always up to date.
+
+  12. As a registered user, I want to be able to delete my roster so that any old or unnecessary rosters don't use any unnecessary space.
+
+#### Admins
+
+  13. As an admin, I want to be able to log into an admin interace so that I can view, add, update, or delete information pertaining to the army rosters.
+
+  14. As an admin, I want to be able to access the users for the website so that I can make any adjustments to their accounts such as changing their password or email, should they request it.
+
+  15. As an admin, I want to be able to view a list of the user so that I know how many active users there are.
+
+#### Site User
+
+  16. As a site user, I want to be engaged by the user interface so that I know I will enjoy spending time building my rosters as I navigate the same menus repeatedly.
+
+  17. As a site user, I want to be shown responses from the websites upon i
