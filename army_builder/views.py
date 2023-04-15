@@ -28,7 +28,7 @@ def create_roster(request):
         form = RosterForm(request.POST)
         print(form.errors)
         if form.is_valid():
-            messages.success(request, 'Roster created successfully.')
+            messages.success(request, "Roster created successfully.")
             form.save()
             return redirect("roster-list")
 
@@ -44,10 +44,10 @@ def edit_roster(request, id):
     form = RosterForm(instance=roster)
 
     if request.POST:
-        form = RosterForm(request.POST)
+        form = RosterForm(request.POST, instance=roster)
         print(form.errors)
         if form.is_valid():
-            messages.success(request, 'Roster edited successfully.')
+            messages.success(request, "Roster edited successfully.")
             form.save()
             return redirect("roster-list")
 
@@ -57,6 +57,20 @@ def edit_roster(request, id):
     }
 
     return render(request, "army_builder/rosters/edit.html", context)
+
+def delete_roster(request, id):
+    roster = get_object_or_404(Roster, id = id)
+
+    if request.POST:
+        messages.success(request, "Roster deleted successfully.")
+        roster.delete()
+        return redirect("roster-list")
+
+    context = {
+        "roster": roster,
+    }
+
+    return render(request, "army_builder/rosters/delete.html", context)
 
 def get_about(request):
     return render(request, "pages/about.html")
