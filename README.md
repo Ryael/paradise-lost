@@ -373,25 +373,25 @@ Editing a roster is almost identical to creating one as the menu is the same sam
 
 [view-roster](view-roster)
 
-Viewing a roster is more or less indentical to the "My Rosters" page except it shows one select roster in the same fashion as the roster list. Ideally this is what the users would be able to share with other players but unfortunately that functionality fell out of scope. At the bottom of the menu, a "Back" button is available for the user.
+Viewing a roster is more or less indentical to the "My Rosters" page except it shows one select roster in the same fashion as the roster list. Ideally this is what the users would be able to share with other players but unfortunately that functionality fell out of scope. At the bottom of the menu, a "Return" button is available for the user.
 
 ### Delete Roster
 
 [delete-roster](delete-roster)
 
-Delete roster description.
+Opting to delete a roster brings the user to a very simple and short menu where they're asked if this is the correct roster to be deleted. This roster is referenced by name and has a button labelled "Yes" under this text, with a "Cancel" link under that should the user want to return to the roster list.
 
 ### Error 404
 
 [error-404](error-404)
 
-Error 404 description.
+If a user managed to stray off the beaten path they'll be displayed an error 404 page, which has been styled with the usual orange colour. This design uses an SVG which can be upscaled almost infinitely without sacrificing any quality. This SVG is created entirely using CSS, too. The SVG itself is used to create a round "O" animation that feels like it'll fit right in with any futurustic-themed website and is sandwiched by "4" and "0". The error description is rendered in Exo and in orange but with flashing brackets at both sides that help grab the user's attention.
 
 ### Error 500
 
 [error-500](error-500)
 
-Error 500 description.
+Similarly to the error
 
 ### Favicon
 
