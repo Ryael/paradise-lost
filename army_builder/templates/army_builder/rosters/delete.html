@@ -7,26 +7,23 @@
   <div id="roster-container">
     <div id="roster-management">
       <h2>Delete Roster</h2>
-      <form action="" method="POST">
-          {% csrf_token %}
-
-          <p class="roster-text">
-            Are you sure you want to delete <span id="roster-name">{{ roster.name }}</span>?
-          </p>
-          <button type="submit" class="button" id="delete-roster">
-            <span class="decorator top left"></span>
-            <span class="decorator top right"></span>
-            <span class="decorator bottom left"></span>
-            <span class="decorator bottom right"></span>
-            Yes
-          </button>
-          <p class="roster-text">
-            <a href="{% url 'roster-list' %}"><span>Cancel</span></a>
-          </p>
+      <form method="POST">
+        {% csrf_token %}
+        <p class="roster-text">
+          Are you sure you want to delete <span id="roster-name">{{ roster.name }}</span>?
+        </p>
+        <button type="submit" class="button" id="delete-roster">
+          <span class="decorator top left"></span>
+          <span class="decorator top right"></span>
+          <span class="decorator bottom left"></span>
+          <span class="decorator bottom right"></span>
+          Yes
+        </button>
+        <p class="roster-text">
+          <a href="{% url 'roster-list' %}"><span>Cancel</span></a>
+        </p>
       </form>
     </div>
   </div>
 </div>
-
 {% endblock %}
-
