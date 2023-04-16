@@ -14,7 +14,6 @@
       </ul>
     {% endif %}
     <table cellspacing="0">
-        <th>ID</th>
         <th>Name</th>
         <th>Ruleset</th>
         <th>Army</th>
@@ -22,7 +21,6 @@
         <th></th>
         {% for roster in rosters %}
           <tr>
-            <td>#{{ roster.id }}</td>
             <td>{{ roster.name }}</td>
             <td>{{ roster.ruleset.name }}</td>
             <td>{{ roster.army.name}}</td>
