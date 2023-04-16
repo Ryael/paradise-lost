@@ -1,6 +1,7 @@
 {% extends "army_builder/layout/base.html" %}
 
 {% load i18n %}
+
 {% load account socialaccount %}
 
 {% block title %}Login{% endblock %}
@@ -13,9 +14,9 @@
       {% csrf_token %}
       {{ form.as_p }}
       {% if redirect_field_value %}
-      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
       {% endif %}
-      <button class="primaryAction, button"  type="submit">{% trans "Sign In" %}
+      <button class="primaryAction, button"  type="submit">{% trans "Login" %}
         <span class="decorator top left"></span>
         <span class="decorator top right"></span>
         <span class="decorator bottom left"></span>
