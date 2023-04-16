@@ -11,7 +11,7 @@
           {% csrf_token %}
 
           <p class="roster-text">
-            Are you sure you want to delete {{ roster.name }}?
+            Are you sure you want to delete <span id="roster-name">{{ roster.name }}</span>?
           </p>
           <button type="submit" class="button" id="delete-roster">
             <span class="decorator top left"></span>
