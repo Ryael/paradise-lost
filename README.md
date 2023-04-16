@@ -32,7 +32,8 @@ For the intents and purpose of this project, Simon W. will be referred to as the
     - [Design Philosophy]
       - [Color Scheme]
       - [Typography]
-    - [Wireframe & Database]
+    - [Wireframes]
+    - [Database]
 5. [Agile Development Process] - Trello Kanban Board & Link. Links to agile.md (Covers sprints and Epics, User Stories, and etc) A sprint will be a day.
 6. [Features]
     - Landing Page
@@ -44,11 +45,8 @@ For the intents and purpose of this project, Simon W. will be referred to as the
       - Delete
       - Use Preset/Predefined
     - Sign in/Sign Out
-    - Modals
     - Navbar
     - Hero Images
-    - Instructions
-    - Main Page Content
     - Error Pages
     - Footer
     - Dashboard
@@ -232,15 +230,15 @@ The below image was generated using [coolers.co](https://coolors.co/fd9c31-ccccc
 
 Two fonts were specifically chosen for this website:
 
-**Orbitron**
+- *Orbitron*
 
 Orbitron was chosen due to its sleek look which feels like something out of a fururistic sci-fi movie. As it's intended for display purposes, it was used for the logo and as text headings.
 
-**Exo**
+- Exo*
 
 Exo was chosen to compliment Orbitron as it also conveys a similarly futuristic yet elegant feeling. While it can also be used for headings, Exo looks much better at small text sizes, which is what it's used for in this project.
 
-### Wireframes & Database
+### Wireframes
 
 The conceptualisation of the layout used in this project began with simple pen and paper sketches, which were then transformed into wireframes via Balsamiq. Everything shown here is a rough beta of the layout, some of which has changed during development.
 
@@ -263,8 +261,123 @@ This is the prototype of the project, which changes over the course of project d
   <img src="docs/wireframes/game.png" alt="Wireframe of the Roster">
 </details>
 
+### Database
+
+Database blah blah blah blah.
+
 ## Agile Development Process
 
 [Jira](https://www.atlassian.com/software/jira) was used to create and track User Stories and issues. Login creditentials will be provided for the above project space when the project is submitted. A summary of my agile process and learing outcomes can be found [here]().
 
-###
+## Features
+
+### Logo
+
+[logo]()
+
+No suitable icon was found for the logo and hence the Orbitron font was used for it instead. To create a sense of contrast "Paradise" was written in white, whereas "Lost" was written in orange and has less of a font weight to it than "Paradise". This approach to text logo design achieves a sleek and unique looking logo that would have otherwise been less appealing to the eye. Interacting with the logo also brings the user to the home/landing page, as per usual.
+
+### Landing Page
+
+[landing-page]()
+
+The landing page utlises a hero-video for its background, which loops perfectly every 10 seconds. Upon loading into the page, the user is greeted the video and the dynamically rotating text. The text rotates between synonyms for "army", "fleet", and other similar words every four seconds. Dynamically changing text is considered to be very [effective for user conversion](https://www.convertize.io/dynamic-text/) and helps to create a very engaging landing page. This text is accompanied by a call-to-action button with the words "Enlist Now!", urging them to sign-up. Lastly, in the top right corner, a hamburger menu can be seen which are commonly used to expand a navigation menu.
+
+### Navigation Menu - New User
+
+[navigation-menu-new]()
+
+The navigation menu opens with a smooth fade-in animation and the hamburger icon is replaced with an "X", informing the user that this "X" icon is what they should interact with should they want to close the navigation menu. The user is greeted by a dark gray "carbon-fiber" background with small dots, which is small single dot image that's repeated. This allows the dot to scale to any viewport neccessary without any stretching. The links themselves start as white and as the user interacts with one, all but the active one fade to grey. The social-icons on the bottom also function the same way.
+
+The bottom of the navigation menu feature the aforementioned social-icons which also double up as the website's footer. This approach was opted for because full-screen nagivation menus are becoming more and more popular, as they allow for a bigger focus on the actual page content. Even if a stick navigation bar approach is utilised, they still use a portion of the viewing space. The footer can also add unnecessary vertical scrolling. As this website aims to utilise the immediately available viewing space, fullscreen navigation menu was the ideal choice.
+
+### Navigation Menu - Registered User
+
+[navigation-menu-new]()
+
+Similarly to the New User example, the navigation menu changes the links available to the user depending if they're authenticated or not. If not, the above example is what they'll see. If they are, however, then they'll instead be shown the Registered User example with the Login and Register links replaced with Dashboard and Logout links.
+
+### Button
+
+[button]()
+
+All the buttons present on the website follow the same design: gray background with orange text and orange decorators on all the corners. Upon interaction, the corners expand and float outwards. This effect was made to be reminiscent of an aiming reticle focusing in and out to give the website's buttons a more military-esque feeling, furthering the idea that this website has a sci-fi army feel. The decorators and button text also both flicker upon loading and interaction, as a way of guiding the user towards them.
+
+### About
+
+[about]()
+
+About description.
+
+### Login
+
+[login](login)
+
+Login description.
+
+### Register
+
+[register](register)
+
+Register description.
+
+### Logout
+
+[logout](logout)
+
+Logout description.
+
+### Dashboard
+
+[dashboard](dashboard)
+
+Dashboard description.
+
+### Forgot Your Password
+
+[forgot-your-password](forgot-your-password)
+
+FYP description.
+
+### Change Your Password
+
+[change-your-password](change-your-password)
+
+CYP description.
+
+### Roster List
+
+[roster-list](roster-list)
+
+Roster list description.
+
+### Create Roster
+
+[create-roster](create-roster)
+
+Create roster description.
+
+### Edit Roster
+
+[edit-roster](edit-roster)
+
+Edit roster description.
+
+### View Roster
+
+[view-roster](view-roster)
+
+View roster description.
+
+### Delete Roster
+
+[delete-roster](delete-roster)
+
+Delete roster description.
+
+### Favicon
+
+[favicon][favicon]
+
+Favicon description.
+
