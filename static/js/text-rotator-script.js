@@ -1,10 +1,3 @@
-/* Fullscreen Hamburger Navigation Menu */
-
-$(".hamburger-menu").click(function() {
-  $(this).toggleClass("active");
-  $("#menu").toggleClass("open");
-});
-
 /* Dynamically Rotating Text */
 
 let i = 0;
