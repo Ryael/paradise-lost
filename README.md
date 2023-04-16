@@ -317,7 +317,7 @@ The about page is the one of the first pages the user will see should they want 
 
 [register](register)
 
-This is one of the first menus a new user will see, if the landing page user conversion was successful. Upon loading into this page, the user is greeted by a centered menu with the input text fields outlined in that same orange colour, creating a sense of consistent design throughout. Errors are rendered above their relevant text field and are styled in the same way was regular paragraph text, meaning that the body text is consistently gray throughout. Additionally, a link to the login fage is found at the bottom of the menu and is highlighted in orange, instantly standing out to the user who may be looking just to login. The button for the input is same as the buttons showcased earlier, and this will continue to be the case for every other button on this website.
+This is one of the first menus a new user will see, if the landing page user conversion was successful. Upon loading into this page, the user is greeted by a centered menu with a white outline and input text fields outlined in that same orange colour, creating a sense of consistent design throughout. Errors are rendered above their relevant text field and are styled in the same way was regular paragraph text, meaning that the body text is consistently gray throughout. Additionally, a link to the login fage is found at the bottom of the menu and is highlighted in orange, instantly standing out to the user who may be looking just to login. The button for the input is same as the buttons showcased earlier, and this will continue to be the case for every other button on this website.
 
 ### Login
 
