@@ -6,28 +6,27 @@
 <div id="roster">
   <div id="roster-container">
     <h2>Roster Detail</h2>
-    <table cellspacing="0">
+    <table>
+      <tr>
         <th>Name</th>
         <th>Ruleset</th>
         <th>Army</th>
         <th>Points</th>
-          <tr>
-            <td>{{ data.name }}</td>
-            <td>{{ data.ruleset.name }}</td>
-            <td>{{ data.army.name}}</td>
-            <td>{{ data.points_max }}</td>
-          </tr>
+      </tr>
+      <tr>
+        <td>{{ data.name }}</td>
+        <td>{{ data.ruleset.name }}</td>
+        <td>{{ data.army.name}}</td>
+        <td>{{ data.points_max }}</td>
+      </tr>
     </table>
-    <a href="{% url 'roster-list' %}">
-      <button type="submit" id="create-roster" class="button">
-        <span class="decorator top left"></span>
-        <span class="decorator top right"></span>
-        <span class="decorator bottom left"></span>
-        <span class="decorator bottom right"></span>
-        <span>Return</span>
-      </button>
+    <a href="{% url 'roster-list' %}" type="submit" id="create-roster" class="button">
+      <span class="decorator top left"></span>
+      <span class="decorator top right"></span>
+      <span class="decorator bottom left"></span>
+      <span class="decorator bottom right"></span>
+      <span>Return</span>
     </a>
   </div>
 </div>
-
 {% endblock %}
