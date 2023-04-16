@@ -12,9 +12,9 @@
       {% csrf_token %}
       {{ form.as_p }}
       {% if redirect_field_value %}
-      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
       {% endif %}
-      <button type="submit" class="button">{% trans "Sign Up" %} &raquo;
+      <button type="submit" class="button">{% trans "Register" %} &raquo;
         <span class="decorator top left"></span>
         <span class="decorator top right"></span>
         <span class="decorator bottom left"></span>
@@ -24,14 +24,13 @@
     <div id="end-form">
       <p>
         {% blocktrans %}
-        Already have an account?
-        <a href="{{ login_url }}">
-          <span>Login.</span>
-        </a>
+          Already have an account?
+          <a href="{{ login_url }}">
+            <span>Login.</span>
+          </a>
         {% endblocktrans %}
       </p>
     </div>
   </div>
 </div>
-
 {% endblock %}
