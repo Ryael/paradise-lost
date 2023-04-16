@@ -7,22 +7,21 @@
   <div id="roster-container">
     <div id="roster-management">
       <h2>Edit Roster</h2>
-      <form action="" method="POST" enctype="multipart/form-data">
-          {% csrf_token %}
-          {{ form.as_p }}
-          <button type="submit" class="button" id="update-roster">
-            <span class="decorator top left"></span>
-            <span class="decorator top right"></span>
-            <span class="decorator bottom left"></span>
-            <span class="decorator bottom right"></span>
-            Update
-          </button>
-          <p class="roster-text">
-            <a href="{% url 'roster-list' %}"><span>Cancel</span></a>
-          </p>
+      <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="button" id="update-roster">
+          <span class="decorator top left"></span>
+          <span class="decorator top right"></span>
+          <span class="decorator bottom left"></span>
+          <span class="decorator bottom right"></span>
+          Update
+        </button>
+        <p class="roster-text">
+          <a href="{% url 'roster-list' %}"><span>Cancel</span></a>
+        </p>
       </form>
     </div>
   </div>
 </div>
-
 {% endblock %}
