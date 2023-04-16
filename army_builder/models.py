@@ -1,7 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-# Create your models here.
 
 class BaseModel(models.Model):
     """
@@ -17,10 +16,12 @@ class BaseModel(models.Model):
     def __str__(self):
         return self.name
 
+
 class Ruleset(BaseModel):
     """
     Stores ruleset data.
     """
+
 
 class Army(BaseModel):
     """
@@ -29,18 +30,30 @@ class Army(BaseModel):
     class Meta:
         verbose_name_plural = "Armies"
 
-    ruleset = models.ForeignKey(Ruleset, on_delete=models.CASCADE, null=False, blank=False)
+    ruleset = models.ForeignKey(
+        Ruleset, on_delete=models.CASCADE, null=False, blank=False
+    )
+
 
 class Roster(BaseModel):
     """
     Stores user rosters.
     """
     name = models.CharField(null=False, blank=False, max_length=64)
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null=False, blank=False)
-    ruleset = models.ForeignKey(Ruleset, on_delete=models.CASCADE, null=False, blank=False)
-    army = models.ForeignKey(Army, on_delete=models.CASCADE, null=False, blank=False)
-    points_max = models.SmallIntegerField(default="0", null=False, blank=False)
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE, null=False, blank=False
+    )
+    ruleset = models.ForeignKey(
+        Ruleset, on_delete=models.CASCADE, null=False, blank=False
+    )
+    army = models.ForeignKey(
+        Army, on_delete=models.CASCADE, null=False, blank=False
+    )
+    points_max = models.SmallIntegerField(
+        default="0", null=False, blank=False
+    )
     serialised_roster = models.TextField()
+
 
 class Ability(BaseModel):
     """
@@ -51,6 +64,7 @@ class Ability(BaseModel):
 
     rule = models.TextField()
 
+
 class WeaponProfile(BaseModel):
     """
     Stores weapon statistics.
@@ -60,7 +74,9 @@ class WeaponProfile(BaseModel):
     strength = models.CharField(max_length=3)
     armor_penetration = models.CharField(max_length=3)
     damage = models.CharField(max_length=5)
-    ability = models.ForeignKey(Ability, on_delete=models.CASCADE, null=True, blank=True)
+    ability = models.ForeignKey(
+        Ability, on_delete=models.CASCADE, null=True, blank=True
+    )
 
 
 class Wargear(BaseModel):
@@ -71,17 +87,23 @@ class Wargear(BaseModel):
         verbose_name_plural = "Wargear"
 
     points_cost = models.SmallIntegerField(default=0, null=False, blank=False)
-    ability = models.ForeignKey(Ability, on_delete=models.CASCADE, null=True, blank=True)
+    ability = models.ForeignKey(
+        Ability, on_delete=models.CASCADE, null=True, blank=True
+    )
     weapon_profiles = models.ManyToManyField(WeaponProfile, blank=True)
+
 
 class Option(BaseModel):
     """
     Stores options for user selection.
     """
-    no_to_select = models.SmallIntegerField(default=-1, null=False, blank=False)
+    no_to_select = models.SmallIntegerField(
+        default=-1, null=False, blank=False
+    )
     abilities = models.ManyToManyField(Ability, blank=True)
     wargear = models.ManyToManyField(Wargear, blank=True)
     nested_options = models.ManyToManyField("self", blank=True)
+
 
 class Specialism(BaseModel):
     """
@@ -89,16 +111,20 @@ class Specialism(BaseModel):
     """
     abilities = models.ManyToManyField(Option)
 
+
 class Keyword(BaseModel):
     """
     Stores unit keywords.
     """
 
+
 class Unit(BaseModel):
     """
     Stores unit's unique characteristics.
     """
-    army = models.ForeignKey(Army, on_delete=models.CASCADE, null=False, blank=False)
+    army = models.ForeignKey(
+        Army, on_delete=models.CASCADE, null=False, blank=False
+    )
     move = models.CharField(max_length=3)
     weapon_skill = models.CharField(max_length=3)
     ballistics_skill = models.CharField(max_length=3)
