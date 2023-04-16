@@ -18,14 +18,16 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from army_builder.views import (get_index,
-                                get_dashboard,
-                                list_roster,
-                                create_roster,
-                                view_roster,
-                                delete_roster,
-                                get_about,
-                                edit_roster)
+from army_builder.views import (
+    get_index,
+    get_dashboard,
+    list_roster,
+    create_roster,
+    view_roster,
+    delete_roster,
+    get_about,
+    edit_roster
+)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
