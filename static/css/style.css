@@ -112,7 +112,7 @@ video {
 /* Buttons */
 
 .button {
-  margin: 20px 20px;
+  margin: 20px;
   padding: 20px 40px;
   position: relative;
   background-color: #333;
@@ -120,6 +120,7 @@ video {
   color: #fd9c31;
   text-align: center;
   letter-spacing: 2px;
+  font-family: Orbitron, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   outline: none;
