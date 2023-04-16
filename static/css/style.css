@@ -132,14 +132,6 @@ video {
   text-decoration: none;
 }
 
-.button:first-of-type {
-  margin-left: 0px;
-}
-
-.button:last-of-type {
-  margin-right: 0px;
-}
-
 .button:hover {
   position: relative;
   border: 1px solid transparent;
@@ -533,6 +525,7 @@ video {
 #dashboard > .dashboard-button {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #username,
