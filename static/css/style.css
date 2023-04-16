@@ -127,6 +127,8 @@ video {
   outline: none;
   cursor: pointer;
   z-index: 50;
+  font-size: 13px;
+  text-decoration: none;
 }
 
 .button:first-of-type {
