@@ -295,15 +295,21 @@
 #login-form input,
 #signup-form input,
 #password-reset input,
-#password-change input {
+#password-change input,
+#roster-management input {
   width: 65%;
 }
 
 #login-form label,
 #signup-form label,
 #password-reset label,
-#password-change label {
+#password-change label,
+#roster-management label {
   margin-left: 15%;
+}
+
+#roster-management select {
+  width: 72%;
 }
 
 #login-form #id_remember {
@@ -313,14 +319,16 @@
 #logout-form .button,
 #login-form .button,
 #signup-form .button,
-#change-pw-key-done {
+#change-pw-key-done,
+#roster-management #update-roster,
+#roster-management #delete-roster {
   padding:20px 70px
   }
 
 #reset-pw,
 #change-pw,
 #change-pw-key,
-#dash-changepw  {
+#dash-changepw {
   padding: 20px;
 }
 
