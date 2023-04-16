@@ -1,10 +1,9 @@
 /* Fullscreen Hamburger Navigation Menu */
 
-$(".hamburger-menu").click (function(){
+$(".hamburger-menu").click(function() {
   $(this).toggleClass("active");
   $("#menu").toggleClass("open");
 });
-
 
 /* Dynamically Rotating Text */
 
@@ -24,7 +23,7 @@ const rotateText = () => {
   setTimeout(() => {
     phrase.textContent = newPhrase;
   }, 400); // Time for opacity to hit 0 before changing words.
-}
+};
 
 const randomNum = (num, max) => {
   let j = Math.floor(Math.random() * max);
@@ -35,7 +34,7 @@ const randomNum = (num, max) => {
   } else {
     return j;
   }
-}
+};
 
 const getAnimationTime = () => {
   const phrase = document.querySelector(".rotating-text");
@@ -44,7 +43,7 @@ const getAnimationTime = () => {
 
   const animationTime = parseFloat(animation.match(/\d*[.]?\d+/)) * 1000;
   return animationTime;
-}
+};
 
 rotateText();
 setInterval(rotateText, getAnimationTime());
