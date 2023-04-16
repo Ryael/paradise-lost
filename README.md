@@ -263,3 +263,8 @@ This is the prototype of the project, which changes over the course of project d
   <img src="docs/wireframes/game.png" alt="Wireframe of the Roster">
 </details>
 
+## Agile Development Process
+
+[Jira](https://www.atlassian.com/software/jira) was used to create and track User Stories and issues. Login creditentials will be provided for the above project space when the project is submitted. A summary of my agile process and learing outcomes can be found [here]().
+
+###
