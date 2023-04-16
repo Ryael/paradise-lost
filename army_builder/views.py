@@ -16,7 +16,7 @@ def get_dashboard(request):
 @login_required
 def list_roster(request):
 
-    rosters = Roster.objects.all()
+    rosters = Roster.objects.all().order_by("name")
 
     context = {
         "rosters": rosters,
