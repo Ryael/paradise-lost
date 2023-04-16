@@ -212,6 +212,17 @@ Certain user stories were dropped as part of the agile process. They are as foll
   - As a regsitered user, I want to add other people as friends so that we can make rosters and play together.
   - As a registered user, I want to delete a friend because they were very unsportsmanlike after beating me in a game.
   - As a registered user, I want to find nearby active players so that we can meet-up and play games.
-
   - As an admin, I want to add headings to the admin database tables so I can more quickly understand my data.
   - As an admin, I want to filter the admin database tables so that I can more easily find the data I need.
+
+## User Interface
+
+The design of this website began with a simple yet clear vision: to replicate the menus present in old real-time strategy games, such as the Command & Conquer series. While navigating the many menus of the game, especially when choosing a location to start a campaign on on Earth, the player is able to choose their starting location. While they're choosing, a hologram of the Earth is playing on screen. While not exactly the same, [this video (timestamped)](https://youtu.be/j77gwvA2bQU?t=35), shows a very similar sequence.
+
+My goal was first and foremost to replicate this sort of feeling: that the user is looking over the planet, ready to make their move. As such, I began scouring the website for a video that was not too long and looped perfectly, which is when I happened on Free Stock Videos by Videezy](https://www.videezy.com/abstract/50298-futuristic-globe-world-earth-planet-in-cyberspace-with-binary-code). There's a great collection of high quality videos that are free to use with attribution. This video in particular was exactly what I was looking for, it's a relatively short and perfect loop that features a rotating holograph of the planet.
+
+The colour scheme was picked from this video, which serves as the landing page for the website. The rest of the UI was built around this colour scheme and inspiration. The button style used is reminicsient of a commanding officer making difficult decisions as the reticule focuses in. While of course this website does nothing so serious or grave, this is just the feeling I wanted to evoke with my designs. The menus themselves are simple, sleek, angular, with a repeated dot background combined a semi-transparent black to yellow gradient.
+
+The design of the UI was mostly made with a mobile-first approach but for the smallest viewports, the menus expands to 80-100% of the width to allow for easier viewing.
+
+
