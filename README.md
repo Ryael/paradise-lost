@@ -263,11 +263,9 @@ This is the prototype of the project, which changes over the course of project d
 
 ### Database
 
-Above is the databse schema as the initial plan for the database tables.
+Above is the databse schema as the initial plan for the database tables. Originally it was planned for users to be able to configure their rosters with units, specialisms, abilities, wargear, and weapon profiles. Unfortunately, this fell completely out of scope due to the deadline and unfamiliarity with a method of serialising those models in a way that's customisable to each user.
 
 The user model was not included due to the default user model provided by the ALLAUTH library.
-
-Database blah blah blah blah.
 
 ## Agile Development Process
 
