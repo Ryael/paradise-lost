@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # Create your models here.
 
@@ -34,7 +35,8 @@ class Roster(BaseModel):
     """
     Stores user rosters.
     """
-    name = models.CharField(null=False, blank=False, max_length=20)
+    name = models.CharField(null=False, blank=False, max_length=64)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=False, blank=False)
     ruleset = models.ForeignKey(Ruleset, on_delete=models.CASCADE, null=False, blank=False)
     army = models.ForeignKey(Army, on_delete=models.CASCADE, null=False, blank=False)
     points_max = models.SmallIntegerField(default="0", null=False, blank=False)
