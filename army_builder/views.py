@@ -15,8 +15,7 @@ def get_dashboard(request):
 
 @login_required
 def list_roster(request):
-
-    rosters = Roster.objects.all().order_by("name")
+    rosters = Roster.objects.filter(user = request.user).order_by("name")
 
     context = {
         "rosters": rosters,
@@ -26,15 +25,16 @@ def list_roster(request):
 
 @login_required
 def create_roster(request):
-
     form = RosterForm()
 
     if request.method == "POST":
         form = RosterForm(request.POST)
         print(form.errors)
         if form.is_valid():
+            roster = form.save(commit=False)
+            roster.user = request.user
+            roster.save()
             messages.success(request, 'Roster created successfully.')
-            form.save()
             return redirect("roster-list")
 
     context = {
@@ -47,13 +47,13 @@ def create_roster(request):
 def view_roster(request, id):
     context = {}
 
-    context["data"] = Roster.objects.get(id = id)
+    context["data"] = get_object_or_404(Roster, id = id)
 
     return render(request, "army_builder/rosters/view.html", context)
 
 @login_required
 def edit_roster(request, id):
-    roster = get_object_or_404(Roster, id = id)
+    roster = get_object_or_404(Roster, user = request.user, id = id)
 
     form = RosterForm(instance=roster)
 
@@ -61,8 +61,8 @@ def edit_roster(request, id):
         form = RosterForm(request.POST, instance=roster)
         print(form.errors)
         if form.is_valid():
-            messages.success(request, "Roster edited successfully.")
             form.save()
+            messages.success(request, "Roster edited successfully.")
             return redirect("roster-list")
 
     context = {
@@ -74,11 +74,11 @@ def edit_roster(request, id):
 
 @login_required
 def delete_roster(request, id):
-    roster = get_object_or_404(Roster, id = id)
+    roster = get_object_or_404(Roster, user = request.user, id = id)
 
     if request.POST:
-        messages.success(request, "Roster deleted successfully.")
         roster.delete()
+        messages.success(request, "Roster deleted successfully.")
         return redirect("roster-list")
 
     context = {
