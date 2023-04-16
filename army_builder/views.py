@@ -1,15 +1,19 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from .models import Roster
 from .forms import RosterForm
 
 # Create your views here.
+
 def get_index(request):
     return render(request, "pages/index.html")
 
+@login_required
 def get_dashboard(request):
     return render(request, "users/dashboard.html")
 
+@login_required
 def list_roster(request):
 
     rosters = Roster.objects.all()
@@ -20,6 +24,7 @@ def list_roster(request):
 
     return render(request, "army_builder/rosters/roster-list.html", context)
 
+@login_required
 def create_roster(request):
 
     form = RosterForm()
@@ -38,6 +43,7 @@ def create_roster(request):
 
     return render(request, "army_builder/rosters/create.html", context)
 
+@login_required
 def view_roster(request, id):
     context = {}
 
@@ -45,6 +51,7 @@ def view_roster(request, id):
 
     return render(request, "army_builder/rosters/view.html", context)
 
+@login_required
 def edit_roster(request, id):
     roster = get_object_or_404(Roster, id = id)
 
@@ -65,7 +72,7 @@ def edit_roster(request, id):
 
     return render(request, "army_builder/rosters/edit.html", context)
 
-
+@login_required
 def delete_roster(request, id):
     roster = get_object_or_404(Roster, id = id)
 
