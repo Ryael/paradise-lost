@@ -521,7 +521,8 @@ video {
   flex-direction: column;
 }
 
-#username {
+#username,
+#roster-management #roster-name {
   color: #fff;
   font-weight: 500;
 }
@@ -738,7 +739,7 @@ path#XMLID_11_ ,path#XMLID_2_ {
 
 /* Media Queries */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
 
 table {
   width: auto;
@@ -765,10 +766,12 @@ table tr:nth-child(2n+1) {
 }
 
   td:first-child {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 75px;
+    background-color: transparent;
+    border-bottom: 1px #fd9c31 dashed;
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+    width: auto;
 }
 
   tr:first-child {
@@ -793,18 +796,14 @@ table tr:nth-child(2n+1) {
 }
 
   td:nth-child(2):before {
-    content: "Name:";
-}
-
-  td:nth-child(3):before {
     content: "Ruleset:";
 }
 
-  td:nth-child(4):before {
+  td:nth-child(3):before {
     content: "Army:";
 }
 
-  td:nth-child(5):before {
+  td:nth-child(4):before {
     content: "Points:";
 }
 
@@ -818,30 +817,7 @@ table tr:nth-child(2n+1) {
     display: none;
   }
 
-  svg {
-  transform: scale(0.7);
-}
-}
-
-@media screen and (max-width: 500px) {
-
-  #hero-text {
-    font-size: 18px;
-  }
-
-  .rotating-text {
-    font-size: 25px;
-  }
-
-  #menu .main-navigation a {
-    font-size: 25px;
-  }
-
-  table {
-    border: none;
-  }
-
-  table td {
+    table td {
     padding-bottom: 8px;
   }
 
@@ -877,12 +853,39 @@ td:last-child {
   padding-bottom: 1rem;
 }
 
-svg {
-  transform: scale(0.5);
 }
+
+@media screen and (max-width: 700px) {
+
+svg {
+  transform: scale(0.7);
+}
+}
+
+@media screen and (max-width: 500px) {
+
+  #hero-text {
+    font-size: 18px;
+  }
+
+  .rotating-text {
+    font-size: 25px;
+  }
+
+  #menu .main-navigation a {
+    font-size: 25px;
+  }
+
+  table {
+    border: none;
+  }
 
 .error-message {
   font-size: 10px;
+}
+
+svg {
+  transform: scale(0.5);
 }
 
 }
