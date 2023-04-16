@@ -10,21 +10,17 @@
     Build Your <br>
     <span class="rotating-text"></span>
   </h2>
-  <div id="cta-button">
-    <a href="{% url 'account_signup' %}">
-      <button type="submit" class="button">
-        <span class="decorator top left"></span>
-        <span class="decorator top right"></span>
-        <span class="decorator bottom left"></span>
-        <span class="decorator bottom right"></span>
-        {% if user.is_authenticated %}
-        <span>Dashboard &raquo;</span>
-        {% else %}
-        <span>Enlist Now</span>
-        {% endif %}
-      </button>
-    </a>
-  </div>
+  <a href="{% url 'account_signup' %}" type="submit" class="button">
+    <span class="decorator top left"></span>
+    <span class="decorator top right"></span>
+    <span class="decorator bottom left"></span>
+    <span class="decorator bottom right"></span>
+    {% if user.is_authenticated %}
+      <span>Dashboard &raquo;</span>
+    {% else %}
+      <span>Enlist Now</span>
+    {% endif %}
+  </a>
 </div>
 <div id="hero-video">
   <video playsinline autoplay muted loop poster="https://res.cloudinary.com/raycloud55/image/upload/v1681656327/jInUNSN_extwv3.png" id="bgvideo" width="1920" height="1080">
