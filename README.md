@@ -263,6 +263,10 @@ This is the prototype of the project, which changes over the course of project d
 
 ### Database
 
+Above is the databse schema as the initial plan for the database tables.
+
+The user model was not included due to the default user model provided by the ALLAUTH library.
+
 Database blah blah blah blah.
 
 ## Agile Development Process
@@ -307,73 +311,87 @@ All the buttons present on the website follow the same design: gray background w
 
 [about]()
 
-About description.
-
-### Login
-
-[login](login)
-
-Login description.
+The about page is the one of the first pages the user will see should they want to learn more about the purpose of the website. The entirety of the page background is a dark gray with a similar albeit more widely spaced dot-pattern to the navigation menu, but this time the dot itself is generated with CSS, which allows it expand infinitely as required by the viewport. Links are highlighted in orange and turn to white on mouse-over/interaction, providing the user with visual feedback.
 
 ### Register
 
 [register](register)
 
-Register description.
+This is one of the first menus a new user will see, if the landing page user conversion was successful. Upon loading into this page, the user is greeted by a centered menu with the input text fields outlined in that same orange colour, creating a sense of consistent design throughout. Errors are rendered above their relevant text field and are styled in the same way was regular paragraph text, meaning that the body text is consistently gray throughout. Additionally, a link to the login fage is found at the bottom of the menu and is highlighted in orange, instantly standing out to the user who may be looking just to login. The button for the input is same as the buttons showcased earlier, and this will continue to be the case for every other button on this website.
 
-### Logout
+### Login
 
-[logout](logout)
+[login](login)
 
-Logout description.
-
-### Dashboard
-
-[dashboard](dashboard)
-
-Dashboard description.
+Logging in is an important process for any website with featues locked behind user registration, and as such, login menu itself is simple and short. The user is also provided with a remember-me checkbox, which has had its opacity reduced ever-so-slightly so as to make it fit in with the overall colour scheme of the menu. Upon it being checked, it's highlighted in the usual orange colour. The user is also presented with two links at the bottom of the menu, one linking them back to the register page and the one below that allowing them to use the "Forgot your password" functionality which lets them reset their password via email.
 
 ### Forgot Your Password
 
 [forgot-your-password](forgot-your-password)
 
-FYP description.
+In terms of design, this section doesn't differ at all from any of the above menus. It's more or less the same consistent design that's present throughout all of the website's menus. Upon entering of the email that a user registered with, they're able to request a link via email to reset their email. Once that link is used, the user is redirected to the reset password page where they are given a chance to input a new password and then confirm that same password. Upon doing so, they are brought to a new page where they informed their password being changed has been successful.
+
+### Logout
+
+[logout](logout)
+
+Should the user want to logout, they are brought to one of the smallest menus across the entire website. It's centered vertically and horizontally, which admittedly does stand out. However, this is intentional as the very small menu box looks out of place when it's placed in the same location as the other menus. Upon logging out, the user is not provided with any text but instead is brought to the landing page as is usual practice. The links in the navigation menu also revert to "Register" and "Login".
+
+### Dashboard
+
+[dashboard](dashboard)
+
+Upon successful registration or login, the dashboard page is the first thing the user will see. While there is no message printed to inform the user that their login has been successful, instead they will be greeted by "Welcome, commander USERNAME!". Between the redirect and the greeting on the dashboard, I believe this is sufficient in letting the user know that their login has been successful. The dashboard is available to the user wherever they go via the navigation menu alongside the "Logout" link. On the dashboard itself, the user is given three options on where to go next: "My Rosters", "Change Password", and "Logout".
 
 ### Change Your Password
 
 [change-your-password](change-your-password)
 
-CYP description.
+Changing your password on the website is important because of security. Sometimes one may want a more complex password for peace of mind, sometimes one may want to update their password manager, and even sometimes one may want to update their passwords across all websites due to their password being compromised. As such, it is extremely important to provide the user with a way of changing their password. The menu itself is the exact same as before and once the current password, new password, and new password again are submitted, the page is refreshed and the user is informed via message that their password has been successfully changed.
 
 ### Roster List
 
 [roster-list](roster-list)
 
-Roster list description.
+Once the user interacts with the "My Rosters" button, they'll be brought to the roster index page, which shows all the available rosters. If this is the user's first time coming to this page, there will be no rosters visible and instead all they'll see is a "Create Roster" button. This button is placed under the created rosters but will be in their immediate viewing space initially. The roster menus are different from the general menus as they are much wider to accomodate the tables. This width is adjust to around 80% of the viewport on medium-small devices so as to ensure everything fits nicely and neatly.
+
+Once a roster has been created, they're rendered via as a table via HTML and styled via CSS. For wider screens this will be a table with an orange outline as per usual, for medium-small screens this will be a wide card, and for small screens this will be a narrow card. Each of the aforementioned cards are stacked up on each other vertically with a small space in between. Each roster has three Font Awesome icons: 1) View (Eye), 2) Edit (Pen), and 3) Delete (Bin). These three icons are common practice for these actions and also fade to white on interaction, indicating that they function as links.
 
 ### Create Roster
 
 [create-roster](create-roster)
 
-Create roster description.
+The create roster page is fundamentally very similar to the user account management menus except that it features a number field and drop-down menus for selection. Below the relevant data input is a button that lets the user create a roster with their selected data and below that is a link to go back to roster list.
 
 ### Edit Roster
 
 [edit-roster](edit-roster)
 
-Edit roster description.
+Editing a roster is almost identical to creating one as the menu is the same same except for the page title and submit buttons being different. Simple and straightforward.
 
 ### View Roster
 
 [view-roster](view-roster)
 
-View roster description.
+Viewing a roster is more or less indentical to the "My Rosters" page except it shows one select roster in the same fashion as the roster list. Ideally this is what the users would be able to share with other players but unfortunately that functionality fell out of scope. At the bottom of the menu, a "Back" button is available for the user.
 
 ### Delete Roster
 
 [delete-roster](delete-roster)
 
 Delete roster description.
+
+### Error 404
+
+[error-404](error-404)
+
+Error 404 description.
+
+### Error 500
+
+[error-500](error-500)
+
+Error 500 description.
 
 ### Favicon
 
