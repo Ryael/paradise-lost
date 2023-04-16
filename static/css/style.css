@@ -636,6 +636,106 @@ table i:hover {
   margin: 0px 30px 26px 30px;
 }
 
+/* Error 404 */
+
+#server-error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.error-text {
+  font-size:75px;
+}
+
+.error-text-1 {
+  font-size:75px;
+  transform: translate(20px, 73px)
+}
+
+.error-text-2 {
+  font-size:75px;
+  transform: translate(132px, 71px)
+}
+
+
+svg {
+  width: 500px;
+  height: 400px;
+  text-align: center;
+  fill: #fd9c31;
+}
+
+path#XMLID_5_ {
+
+    fill: #fd9c31;
+    filter: url(#blurFilter4);
+}
+
+path#XMLID_11_ ,path#XMLID_2_ {
+    fill: #fd9c31;
+}
+.circle {
+  animation: out 2s infinite ease-out;
+  fill: #fd9c31;
+}
+
+.error-message {
+  color:#fd9c31;
+}
+.error-message:after {
+  content:"]";
+}
+.error-message:before {
+  content:"[";
+}
+
+.error-message:after,
+.error-message:before {
+  color: #fd9c31;
+  font-size: 20px;
+  -webkit-animation-name: opacity;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+          margin:0 50px;
+}
+
+@-webkit-keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes out {
+  0% {r:1;  opacity: 0.9 ;}
+  25%{r:5;  opacity: 0.3 ;}
+  50%{r:10; opacity: 0.2 ;}
+  75%{r:15;opacity:0.1;}
+  100% {r:20;opacity:0;}
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 700px) {
@@ -717,6 +817,10 @@ table tr:nth-child(2n+1) {
   tr:first-child {
     display: none;
   }
+
+  svg {
+  transform: scale(0.7);
+}
 }
 
 @media screen and (max-width: 500px) {
@@ -771,6 +875,14 @@ table tr:nth-child(2n+1) {
 
 td:last-child {
   padding-bottom: 1rem;
+}
+
+svg {
+  transform: scale(0.5);
+}
+
+.error-message {
+  font-size: 10px;
 }
 
 }
