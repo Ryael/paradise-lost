@@ -113,7 +113,9 @@ video {
 
 .button {
   margin: 20px;
-  padding: 20px 40px;
+  padding: 20px 0;
+  width: 85%;
+  max-width: 250px;
   position: relative;
   background-color: #333;
   border: 1px solid #444;
@@ -209,24 +211,8 @@ video {
   }
 }
 
-#dash-logout,
-#change-pw {
-  padding: 20px 88px;
-  z-index: 0;
-}
-
-#reset-pw {
-  padding: 20px 82px;
-  z-index: 0;
-}
-
-#my-rosters {
-  padding: 20px 71px;
-  z-index: 0;
-}
-
-#dash-changepw {
-  z-index: 0;
+.end-button {
+  margin: 20px 0 51px 0;
 }
 
 /* Navigation Menu */
@@ -245,7 +231,7 @@ video {
   transition: all 0.4s ease-in-out;
   visibility: hidden;
   width: 100%;
-  z-index: 10;
+  z-index: 100;
 }
 
 #menu.open {
@@ -936,5 +922,10 @@ path#XMLID_2_ {
 
   svg {
     transform: scale(0.5);
+  }
+
+  .button {
+    width: 75%;
+    font-size: 10px;
   }
 }

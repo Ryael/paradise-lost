@@ -95,49 +95,6 @@
   margin-left: 30px;
 }
 
-/* Form Buttons */
-
-#login-form button {
-  padding: 20px 135px;
-  margin: 10px 0 20px 0;
-  z-index: 0;
-}
-
-#signup-form button {
-  padding: 20px 126px;
-  z-index: 0;
-}
-
-#logout-form button {
-  padding: 20px 128px;
-  margin: 20px 0 51px 0;
-  z-index: 0;
-}
-
-#change-pw-key {
-  margin: 20px 0 51px 0;
-  padding: 20px 88px;
-  z-index: 0;
-}
-
-#change-pw-key-done {
-  margin: 20px 0 51px 0;
-  padding: 20px 140px;
-  z-index: 0;
-}
-
-#create-roster {
-  margin: 20px 0 70px 0;
-  z-index: 0;
-}
-
-#roster-management #delete-roster,
-#roster-management #update-roster {
-  margin: 20px 0;
-  padding: 20px 126px;
-  z-index: 0;
-}
-
 #body-form {
   text-align: left;
   color: #ccc;
@@ -266,12 +223,6 @@
   margin-left: 77px;
 }
 
-#roster-management button {
-  margin: 20px 0 51px 0;
-  padding: 20px 126px;
-  z-index: 0;
-}
-
 /* Dashboard Messages */
 
 #dashboard-messages {
@@ -323,25 +274,5 @@
 
   #login-form #id_remember {
     margin: -17px 0px 0px 80px;
-  }
-
-  #logout-form .button,
-  #login-form .button,
-  #signup-form .button,
-  #change-pw-key-done,
-  #roster-management #update-roster,
-  #roster-management #delete-roster {
-    padding: 20px 70px;
-  }
-
-  #reset-pw,
-  #change-pw,
-  #change-pw-key,
-  #dash-changepw {
-    padding: 20px;
-  }
-
-  #dash-changepw {
-    padding: 20px 40px;
   }
 }
