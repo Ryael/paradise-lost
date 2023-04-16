@@ -29,13 +29,10 @@ For the intents and purpose of this project, Simon W. will be referred to as the
     - [User Stories]
     - [Dropped User Stories]
 4. [User Interface]
-    - [Wireframe & Database]
-    - [Design]
-      - [Theme/Images]
+    - [Design Philosophy]
       - [Color Scheme]
       - [Typography]
-        - Font 1
-        - Font 2
+    - [Wireframe & Database]
 5. [Agile Development Process] - Trello Kanban Board & Link. Links to agile.md (Covers sprints and Epics, User Stories, and etc) A sprint will be a day.
 6. [Features]
     - Landing Page
@@ -217,12 +214,52 @@ Certain user stories were dropped as part of the agile process. They are as foll
 
 ## User Interface
 
+### Design Philosophy
+
 The design of this website began with a simple yet clear vision: to replicate the menus present in old real-time strategy games, such as the Command & Conquer series. While navigating the many menus of the game, especially when choosing a location to start a campaign on on Earth, the player is able to choose their starting location. While they're choosing, a hologram of the Earth is playing on screen. While not exactly the same, [this video (timestamped)](https://youtu.be/j77gwvA2bQU?t=35), shows a very similar sequence.
 
-My goal was first and foremost to replicate this sort of feeling: that the user is looking over the planet, ready to make their move. As such, I began scouring the website for a video that was not too long and looped perfectly, which is when I happened on Free Stock Videos by Videezy](https://www.videezy.com/abstract/50298-futuristic-globe-world-earth-planet-in-cyberspace-with-binary-code). There's a great collection of high quality videos that are free to use with attribution. This video in particular was exactly what I was looking for, it's a relatively short and perfect loop that features a rotating holograph of the planet.
+My goal was first and foremost to replicate this sort of feeling: that the user is looking over the planet, ready to make their move. As such, I began scouring the website for a video that was not too long and looped perfectly, which is when I happened on Free Stock Videos by [Videezy](https://www.videezy.com/abstract/50298-futuristic-globe-world-earth-planet-in-cyberspace-with-binary-code). There's a great collection of high quality videos that are free to use with attribution. This video in particular was exactly what I was looking for, it's a relatively short and perfect loop that features a rotating holograph of the planet.
 
 The colour scheme was picked from this video, which serves as the landing page for the website. The rest of the UI was built around this colour scheme and inspiration. The button style used is reminicsient of a commanding officer making difficult decisions as the reticule focuses in. While of course this website does nothing so serious or grave, this is just the feeling I wanted to evoke with my designs. The menus themselves are simple, sleek, angular, with a repeated dot background combined a semi-transparent black to yellow gradient.
 
 The design of the UI was mostly made with a mobile-first approach but for the smallest viewports, the menus expands to 80-100% of the width to allow for easier viewing.
 
+#### Colours
+
+The below image was generated using [coolers.co](https://coolors.co/fd9c31-cccccc-ffffff). The orange is the colour that was picked from the landing page video, silver was often used for text, and the white was used for titles and as a form of contrast between the black and greys present throughout the site.
+
+#### Typography
+
+Two fonts were specifically chosen for this website:
+
+**Orbitron**
+
+Orbitron was chosen due to its sleek look which feels like something out of a fururistic sci-fi movie. As it's intended for display purposes, it was used for the logo and as text headings.
+
+**Exo**
+
+Exo was chosen to compliment Orbitron as it also conveys a similarly futuristic yet elegant feeling. While it can also be used for headings, Exo looks much better at small text sizes, which is what it's used for in this project.
+
+### Wireframes & Database
+
+The conceptualisation of the layout used in this project began with simple pen and paper sketches, which were then transformed into wireframes via Balsamiq. Everything shown here is a rough beta of the layout, some of which has changed during development.
+
+This is the prototype of the project, which changes over the course of project development.
+
+<details>
+  <summary>Home Page</summary>
+  <img src="docs/wireframes/main.png" alt="Wireframe of the Home Page">
+</details>
+<details>
+  <summary>Navigation Menu</summary>
+  <img src="docs/wireframes/settings.png" alt="Wireframe of the Navigation Menu">
+</details>
+<details>
+  <summary>General Menu</summary>
+  <img src="docs/wireframes/game.png" alt="Wireframe of the General Menu">
+</details>
+<details>
+  <summary>Roster</summary>
+  <img src="docs/wireframes/game.png" alt="Wireframe of the Roster">
+</details>
 
