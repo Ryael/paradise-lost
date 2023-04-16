@@ -16,7 +16,11 @@
   position: relative;
   width: 400px;
   text-align: center;
-  background: linear-gradient(0deg, rgba(245, 213, 70, 0.1) 0%, rgba(17, 17, 17, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 213, 70, 0.1) 0%,
+    rgba(17, 17, 17, 0) 100%
+  );
   border: 1px #ccc solid;
 }
 
@@ -26,7 +30,11 @@
   position: relative;
   width: 400px;
   text-align: center;
-  background: linear-gradient(0deg, rgba(245, 213, 70, 0.1) 0%, rgba(17, 17, 17, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 213, 70, 0.1) 0%,
+    rgba(17, 17, 17, 0) 100%
+  );
   border: 1px #ccc solid;
 }
 
@@ -46,7 +54,7 @@
   border-bottom: 1px solid #ccc;
   line-height: 2.5rem;
   margin-right: 40px;
-  margin-left: 40px
+  margin-left: 40px;
 }
 
 #login-form input,
@@ -272,70 +280,66 @@
 
 @media screen and (max-width: 900px) {
   #roster-container {
-  width: 80%;
+    width: 80%;
   }
 }
 
 @media screen and (max-width: 500px) {
-
-#logout-form,
-#login-form,
-#signup-form,
-#password-reset,
-#password-change,
-#dashboard,
-#roster-container {
-  width: 80%;
+  #logout-form,
+  #login-form,
+  #signup-form,
+  #password-reset,
+  #password-change,
+  #dashboard,
+  #roster-container {
+    width: 80%;
   }
 
-#roster-container h2 {
-  padding: 0 30px;
-}
-
-#login-form input,
-#signup-form input,
-#password-reset input,
-#password-change input,
-#roster-management input {
-  width: 65%;
-}
-
-#login-form label,
-#signup-form label,
-#password-reset label,
-#password-change label,
-#roster-management label {
-  margin-left: 15%;
-}
-
-#roster-management select {
-  width: 72%;
-}
-
-#login-form #id_remember {
-  margin: -17px 0px 0px 80px;
-}
-
-#logout-form .button,
-#login-form .button,
-#signup-form .button,
-#change-pw-key-done,
-#roster-management #update-roster,
-#roster-management #delete-roster {
-  padding:20px 70px
+  #roster-container h2 {
+    padding: 0 30px;
   }
 
-#reset-pw,
-#change-pw,
-#change-pw-key,
-#dash-changepw {
-  padding: 20px;
-}
+  #login-form input,
+  #signup-form input,
+  #password-reset input,
+  #password-change input,
+  #roster-management input {
+    width: 65%;
+  }
 
-#dash-changepw {
-  padding: 20px 40px;
-}
+  #login-form label,
+  #signup-form label,
+  #password-reset label,
+  #password-change label,
+  #roster-management label {
+    margin-left: 15%;
+  }
 
+  #roster-management select {
+    width: 72%;
+  }
 
+  #login-form #id_remember {
+    margin: -17px 0px 0px 80px;
+  }
 
+  #logout-form .button,
+  #login-form .button,
+  #signup-form .button,
+  #change-pw-key-done,
+  #roster-management #update-roster,
+  #roster-management #delete-roster {
+    padding: 20px 70px;
+  }
+
+  #reset-pw,
+  #change-pw,
+  #change-pw-key,
+  #dash-changepw {
+    padding: 20px;
+  }
+
+  #dash-changepw {
+    padding: 20px 40px;
+  }
 }
