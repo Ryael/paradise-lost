@@ -27,10 +27,9 @@ For the intents and purpose of this project, Simon W. will be referred to as the
 3. [User Experience](#user-experience)
     - [Target Audience](#target-audience)
     - [User Stories](#user-stories)
-    - [Dropped User Stories](#dropped-user-stories)
 4. [User Interface](#user-interface)
     - [Design Philosophy](#design-philosophy)
-      - [Color Scheme](#color-scheme)
+      - [Colours](#colours)
       - [Typography](#typography)
     - [Wireframes](#wireframes)
     - [Database](#database)
@@ -396,6 +395,8 @@ Similarly to the error 404 page, error 500 is displayed whenever there's an inte
 As with all websites, this one also has a Favicon that is displayed beside the Title of the page. A user can quickly and easily discern if they have Paradise Lost open amongst many different tabs by looking for the capital "P" icon, which is rendered in the same font as the title text, Orbitron.
 
 ## Code
+
+Mostly standard practice was followed for creating a Django application, however, due how to `{{forms as p}}` render, `style.css` was split aside from `form.css`, the latter of which targetted any elements on the page post-rendering to style them effectively. `script.js` was also split into two: `hamburger-script.js` and `text-rotator.js` due to the jQuery present on the latter throwing console errors for any page where the dynamic text wasn't present, which was every page except for the home page.
 
 ### Commits
 
