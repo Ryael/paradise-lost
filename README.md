@@ -1,12 +1,12 @@
 # Paradise Lost
 
-![Paradise Lost](docs/screenshots/paradise-lost.gif)
-
 A website for managing armies for tabletop board gaming.
 
 [Paradise Lost - Live Website](https://paradise-lost-app.herokuapp.com/)
 
 ![Stars - Badge](https://badgen.net/github/stars/Ryael/paradise-lost) ![Watchers - Badge](https://badgen.net/github/watchers/Ryael/paradise-lost) ![Issues - Badge](https://badgen.net/github/issues/Ryael/avarice)
+
+![Paradise Lost](docs/screenshots/paradise-lost.gif)
 
 Paradise Lost is a community-based platform to allow users to build and edit their armies, find people nearby to play with (should they want to opt into displaying their location), and make friends!
 
