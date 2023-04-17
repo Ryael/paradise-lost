@@ -89,4 +89,4 @@ Below is a summary of learnings from each individual sprint, gotten from Burnup 
 - This was the tenth and final sprint and its main objective was to finish the last few bugs, testing, and documentation.
 - It took ~10 hours was completely successful, with everything being finished as planned.
 
-
+[Back to Readme](https://github.com/Ryael/paradise-lost)

@@ -197,3 +197,4 @@ I tested the website extensively on Mozilla Firefox, Google Chrome, and Microsof
   - Any user is able to find the admin's socials via the navigation menu, which is always available to them.
   - There they can find the admin's LinkedIn, GitHub, and their e-mail.
 
+[Back to Readme](https://github.com/Ryael/paradise-lost)
