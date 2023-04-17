@@ -389,11 +389,13 @@ If a user managed to stray off the beaten path they'll be displayed an error 404
 
 [error-500](error-500)
 
-Similarly to the error
+Similarly to the error 404 page, error 500 is displayed whenever there's an internal server error. Ideally, users will never encounter it but it uses a similar SVG-styled page with the "4" and "4" replaced with "5" and "0" to spell out error 500. The error description reads "Internal Server Error" in the same style as the above error, too.
 
 ### Favicon
 
 [favicon][favicon]
 
-Favicon description.
+As with all websites, this one also has a Favicon that is displayed beside the Title of the page. A user can quickly and easily discern if they have Paradise Lost open amongst many different tabs by looking for the capital "P" icon, which is rendered in the same font as the title text, Orbitron.
+
+
 
