@@ -16,6 +16,8 @@ Inspired by [Battle Scribe](https://www.battlescribe.net/), which utilises an ap
 
 For the purpose of this project, Simon W. will be referred to as the client as he was the one that pitched the concept. It will be my goal to facilitate and actualise his vision.
 
+!(Responsive)[docs/screenshots/responsive.png]
+
 ## Table of Contents
 
 1. [Paradise Lost](#paradise-lost)
