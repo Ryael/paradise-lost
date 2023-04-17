@@ -415,11 +415,15 @@ Extensive testing has been carried out during and post-development and is availa
 
 ## Future Updates
 
-1.
-2.
-3.
-4.
-5.
+1. Expand on the Roster system, allowing users to add units, wargear, weapon profiles, and the like.
+
+2. Include more rulesets including more than just rulesets for Warhammer 40,000, other armies, and so on. Plenty to expand on, but it ultimately requires a lot more time and research.
+
+3. Tighten up and optimise the UI a bit more. I had less time than I would have liked, so certain aspects had to be rushed to get them done to meet the deadline.
+
+4. Properly center the hero video and fix the issue with the dynamically changing text where it stands to lag a bit. There's no easy fix in mind but there are some JavaScript wizards I could ask for advice.
+
+5. Lastly, as this was a project for Simon W., I'd like to convert this from Python and Django to Ruby and Ruby on Rails. I'm already familiar with Ruby as is, but I would love an opportunity to learn on Rails, as well. I look forward to it.
 
 ## Deployment
 
