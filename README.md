@@ -63,11 +63,10 @@ For the purpose of this project, Simon W. will be referred to as the client as h
     - [Commits](#commits)
 8. [Testing]
 9. [Future Updates](#future-updates)
-10. [Deployment](#deployment) (link to Deployment.md)
+10. [Deployment](#deployment)
 11. [Technologies Used](#technologies-used)
     - [Languages](#languages)
-    - [Python Libraries](#python-libraries)
-    - [Frameworks & Tools](#frameworks--tools)
+    - [Tools](#tools)
 12. [Credits](#credits)
 13. [Acknowledgements](#acknowledgements)
 
@@ -433,6 +432,8 @@ Deployment details.
 
 ## Technologies Used
 
+### Languages
+
 - Python
   - The packages installed for this project can be found in the [requirements.txt](https://github.com/Ryael/paradise-lost/blob/main/requirements.txt).
 - Django
@@ -453,10 +454,28 @@ Deployment details.
 - FontAwesome
   - All the icons present throughout all the pages are from this wonderful package.
 
+### Tools
+
+- [Sublime Text](https://www.sublimetext.com/) - Used as my text editor of choice.
+- [Balsamiq](https://balsamiq.com) - Used to create wireframes.
+- [Obsidian](https://obsidian.md/) - Used to take notes and create to-do lists.
+- [Adope Premiere Pro](https://www.adobe.com/ie/products/premiere.html) - Used to crop, resize, and edit images.
+- [W3C HTML Validator](https://validator.w3.org/) - Used to validate HTML code.
+- [W3C JigSaw Validator](https://jigsaw.w3.org/css-validator/) - Used to Validate CSS code.
+- [JSHint](https://jshint.com/) - Used to validate JS code.
+- [CI Python Linter](https://pep8ci.herokuapp.com/) - Used to validate Python code.
+- [WAVE WebAIM](https://wave.webaim.org/) - Used to check accessibility.
+- [Google Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk) - Used to check performance, SEO, accessibility, and best practices.
+- [Mozilla Firefox Developer Tools](https://www.mozilla.org/en-US/firefox/new/) - Used to check and test the project.
+- [Multi Device Website Mockup Generator](https://techsini.com/multi-mockup/index.php) - Used to create the Multi Device Website Mockup image.
+- [Google Fonts](https://fonts.google.com/) - Fonts were imported from here.
+- [Font Awesome](https://fontawesome.com/) - Icons are used from here.
+- [Favicon.io](https://favicon.io/) - Used to create a favicon.
+- [ShareX](https://getsharex.com/) - Used to take screenshots and gifs.
+
 ## Credits
 
 - [GeeksForGeeks](https://www.geeksforgeeks.org/) - Has some of the best Djano and Python tutorials and walkthrough projects, which were an incredible help.
-
 - [Videezy](https://www.videezy.com/abstract/50298-futuristic-globe-world-earth-planet-in-cyberspace-with-binary-code) - Videezy is the go to place for lovely, high quality videos that are free to use even commericially with just good attribution. It's exactly where I found the holographic rotating planet earth.
 
 - [BattleScribe](https://www.battlescribe.net) - This website of course was inspired by none other than BattleScribe. This is what motivated me and have me an inkling of an idea of how to build it, although it still requires a lot more work, I believe my work is cut out for me.
@@ -470,8 +489,6 @@ Deployment details.
 - [Ivan Villamil](https://codepen.io/ivillamil/pen/jWjgzE) - The roster tables present in Paradise Lost were loosely based on these tables in terms of design, but it was the smaller viewport responsiveness that was borrowed and adapted to the my own style and changed quite a bit in the end.
 
 - [Rebai Adnen (CodePen)](https://codepen.io/adnenrebai/pen/KNqQJP) - The very beautiful and sleek 404 page was gotten from here, cleaned up where possible, and adjusted to suit Paradise Lost. Working with this, I've learned quite a bit with regards as to how to manipulate SVGs.
-
--
 
 ## Acknowledgments
 
