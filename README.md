@@ -18,41 +18,47 @@ For the intents and purpose of this project, Simon W. will be referred to as the
 
 ## Table of Contents
 
-1. [Paradise Lost]
-2. [Planning Phase]
-    - [Strategy]
-      - [Site Aims]
-      - [Oppurtunities] - Feature & Viability Map
-    - [Scope]
-3. [User Experience]
+1. [Paradise Lost](#paradise-lost)
+2. [Planning Phase](#planning-phase)
+    - [Strategy](#strategy)
+      - [Site Aims](#site-aims)
+      - [Opportunities ](#opportunities )
+    - [Scope](#scope)
+3. [User Experience](#user-experience)
     - [Target Audience](#target-audience)
-    - [User Stories]
-    - [Dropped User Stories]
-4. [User Interface]
-    - [Design Philosophy]
-      - [Color Scheme]
-      - [Typography]
-    - [Wireframes]
-    - [Database]
-5. [Agile Development Process] - Trello Kanban Board & Link. Links to agile.md (Covers sprints and Epics, User Stories, and etc) A sprint will be a day.
-6. [Features]
-    - Landing Page
-    - Logo
-    - Favicon
-    - Army
-      - Create
-      - Edit
-      - Delete
-      - Use Preset/Predefined
-    - Sign in/Sign Out
-    - Navbar
-    - Hero Images
-    - Error Pages
-    - Footer
-    - Dashboard
+    - [User Stories](#user-stories)
+    - [Dropped User Stories](#dropped-user-stories)
+4. [User Interface](#user-interface)
+    - [Design Philosophy](#design-philosophy)
+      - [Color Scheme](#color-scheme)
+      - [Typography](#typography)
+    - [Wireframes](#wireframes)
+    - [Database](#database)
+5. [Agile Development Process](#agile-development-process)
+6. [Features](#features)
+    - [Logo](#logo)
+    - [Landing Page](#landing-page)
+    - [Navigation Menu - New User](#navigation-menu-new-user)
+    - [Navigation Menu - Registered User](#navigation-menu-registered-user)
+    - [Button](#button)
+    - [About](#about)
+    - [Register](#register)
+    - [Login](#login)
+    - [Forgot Your Password](#forgot-your-password)
+    - [Logout](#logout)
+    - [Dashboard](#dashboard)
+    - [Change Your Password](#change-your-password)
+    - [Roster List](#roster-list)
+    - [Create Roster](#create-roster)
+    - [Edit Roster](#edit-roster)
+    - [View Roster](#view-roster)
+    - [Delete Roster](#delete-roster)
+    - [Error 404](#error-404)
+    - [Error 505](#error-500)
+    - [Favicon](#favicon)
 7.  [Code](#code)
     - [Commits](#commits)
-8. [Testing] (Link to Testing.MD)
+8. [Testing]
     - Validation
       - [Python Validation](#python-validation)
       - [JS, HTML, CSS Validation]
