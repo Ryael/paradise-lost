@@ -220,6 +220,8 @@ The design of the UI was mostly made with a mobile-first approach. However, for 
 
 The below image was generated using [coolers.co](https://coolors.co/fd9c31-cccccc-ffffff). The orange is the colour that was picked from the landing page video, silver was often used for text, and the white was used for titles and as a form of contrast between the black and greys present throughout the site.
 
+![Paradise Lost - Colours](docs/screenshots/colours.png)
+
 #### Typography
 
 Two fonts were specifically chosen for this website:
@@ -240,19 +242,19 @@ This is the prototype of the project, which changes over the course of project d
 
 <details>
   <summary>Home Page</summary>
-  <img src="docs/wireframes/main.png" alt="Wireframe of the Home Page">
+  <img src="docs/wireframes/home.png" alt="Wireframe of the Home Page">
 </details>
 <details>
   <summary>Navigation Menu</summary>
-  <img src="docs/wireframes/settings.png" alt="Wireframe of the Navigation Menu">
+  <img src="docs/wireframes/navigation-menu.png" alt="Wireframe of the Navigation Menu">
 </details>
 <details>
   <summary>General Menu</summary>
-  <img src="docs/wireframes/game.png" alt="Wireframe of the General Menu">
+  <img src="docs/wireframes/menu.png" alt="Wireframe of the General Menu">
 </details>
 <details>
   <summary>Roster</summary>
-  <img src="docs/wireframes/game.png" alt="Wireframe of the Roster">
+  <img src="docs/wireframes/roster.png" alt="Wireframe of the Roster">
 </details>
 
 ### Database
