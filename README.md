@@ -1,5 +1,7 @@
 # Paradise Lost
 
+![Paradise Lost](docs/screenshots/paraddise-lost.gif)
+
 A website for managing armies for tabletop board gaming.
 
 [Paradise Lost - Live Website](https://paradise-lost-app.herokuapp.com/)
