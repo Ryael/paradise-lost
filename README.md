@@ -457,10 +457,10 @@ After account creation, follow the below deployment steps:
 3. Using a unique app name click create app.
 4. Navigate to Settings, where you will configure Config Vars.
 5. You will need to add the very minimum of the following:
-  - CLOUDINARY_URL
-  - DATABASE_URL
-  - DISABLE_COLLECTSTATIC
-  - SECRET_KEY
+  - `CLOUDINARY_URL`
+  - `DATABASE_URL`
+  - `DISABLE_COLLECTSTATIC`
+  - `SECRET_KEY`
 
 After all this, you're still not done because Heroku requires two additional files: `requirements.txt` and `Profile`.
 
@@ -526,7 +526,7 @@ Now, lastly, all you need to do is to navigate to the Deploy tab and hit Deploy.
 
 - [Robin Selmer (CodePen)](https://codepen.io/robinselmer/pen/OKwvqE) - This was the general button design that was used throughout the project. It's the corner decorators that give the button such a unique feeling, allowing it to look like a reticle focusing in and out. The design was mostly kept the same but it was changed where possible.
 
-- [Ivan Villamil](https://codepen.io/ivillamil/pen/jWjgzE) - The roster tables present in Paradise Lost were loosely based on these tables in terms of design, but it was the smaller viewport responsiveness that was borrowed and adapted to the my own style and changed quite a bit in the end.
+- [Ivan Villamil (CodePen)](https://codepen.io/ivillamil/pen/jWjgzE) - The roster tables present in Paradise Lost were loosely based on these tables in terms of design, but it was the smaller viewport responsiveness that was borrowed and adapted to the my own style and changed quite a bit in the end.
 
 - [Rebai Adnen (CodePen)](https://codepen.io/adnenrebai/pen/KNqQJP) - The very beautiful and sleek 404 page was gotten from here, cleaned up where possible, and adjusted to suit Paradise Lost. Working with this, I've learned quite a bit with regards as to how to manipulate SVGs.
 
