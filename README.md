@@ -52,14 +52,6 @@ For the intents and purpose of this project, Simon W. will be referred to as the
     - Dashboard
 7.  [Code](#code)
     - [Commits](#commits)
-    - [Folder Structure](#folder-structure)
-    - [Constants](#constants)
-    - [Helper Functions](#helper-functions)
-    - [Game Loop](#game-loop)
-    - [Classes](#classes)
-    - [Map Design](#map-design)
-    - [YAML](#yaml)
-    - [Data Model](#data-model)
 8. [Testing] (Link to Testing.MD)
     - Validation
       - [Python Validation](#python-validation)
@@ -397,5 +389,15 @@ Similarly to the error 404 page, error 500 is displayed whenever there's an inte
 
 As with all websites, this one also has a Favicon that is displayed beside the Title of the page. A user can quickly and easily discern if they have Paradise Lost open amongst many different tabs by looking for the capital "P" icon, which is rendered in the same font as the title text, Orbitron.
 
+## Code
 
+### Commits
+
+- `git status` was used far more frequently to avoid committing anything I didn't intend to and this helped with keeping the commits down in size.
+- If any errors were made in the commit message, `git commit --amend` was used to edit it.
+- If a file was unintentionally added, `git restore --staged file` was used to rectify this.
+- `git commit -v` was used almost exclusively due to being able a description and see the differences in staged files below.
+- The imperative mood was used throughout all messages and descriptions.
+
+All of the above allowed for more precise and correct version control.
 
