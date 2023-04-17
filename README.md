@@ -403,3 +403,25 @@ Primarily standard practice was followed for creating a Django application, howe
 
 All of the above allowed for more precise and correct version control.
 
+## Testing
+
+Extensive testing has been carried out during and post-development and is available in a separate document [here]().
+
+## Future Updates
+
+1.
+2.
+3.
+4.
+5.
+
+## Deployment
+
+Deployment details.
+
+## Technologies Used
+
+
+## Credits
+
+## Acknowledgments
