@@ -389,7 +389,7 @@ Similarly, to the error 404-page, error 500 is displayed whenever there's an int
 
 ### Favicon
 
-![favicon][docs/screenshots/favicon.png]
+![favicon](docs/screenshots/favicon.png)
 
 As with all websites, this one also has a Favicon that is displayed beside the Title of the page. A user can quickly and easily discern if they have Paradise Lost open amongst many different tabs by looking for the capital "P" icon, which is rendered in the same font as the title text, Orbitron.
 
