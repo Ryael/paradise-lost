@@ -33,7 +33,7 @@ Mozilla Firefox's built-in Responsive Design Mode was to extensively test all as
 
 Google Lighthouse was used to assess the performance of this website. All tests were performed in incognito mode to avoid interference from any other sources. Tests were carried out on each section but the same result was returned every time. This was the same case for mobile, and as such, only one result will be provided.
 
-[lighthouse](lighthouse)
+![Lighthouse](docs/testing/lighthouse.png)
 
 ## Validation
 
@@ -41,20 +41,21 @@ Google Lighthouse was used to assess the performance of this website. All tests 
 
 [W3C Markup Validation Service](https://validator.w3.org/nu/) was used to validate all the HTML. Each file was checked by text input first and then by address afterwards. No errors were found, aside from errors pertaining to templating. A few warnings were flagged but this was assumed to be because of Django as well.
 
-[html](html)
+![HTML](docs/testing/html.png)
 
 ### CSS
 
 [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate both CSS stylesheets. No errors were found for `form.css` but `style.css` showed errors for "Property r doesn't exist". However, after extensive research, this may just be that the validation tool is out of date. Property `r` refers to the radius of a circle and is often used in SVG designs. There's even a [css-tricks page](https://css-tricks.com/svg-properties-and-css/) that covers the use of it. Additionally, it seems like the [VSCode linter](https://github.com/microsoft/vscode/issues/85828) also picks up on it incorrectly and has since 2019. The latest post was last month and it still seems to be an issue.
 
-[form-css](form-css)
-[style-css](style-css)
+![Form CSS](docs/testing/form-css.png)
+
+![Style CSS](docs/testing/style-css.png)
 
 ### JS
 
 [JSHint](https://jshint.com/) was used to validate JavaScript code. It detected one unused variable, but that variable is indeed used and was hence left alone.
 
-[js](js)
+[JavaScript](docs/testing/jshint.png)
 
 ### PEP8
 
