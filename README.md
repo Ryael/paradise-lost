@@ -431,7 +431,36 @@ Deployment details.
 
 ## Technologies Used
 
+- Python
+  - The packages installed for this project can be found in the [requirements.txt](https://github.com/Ryael/paradise-lost/blob/main/requirements.txt).
+- Django
+  - Django was used as the Python web framework.
+  - ALLAUTH was used to handle user authentication.
+- Heroku
+  - Heroku was used to deploy the website.
+- ElephantSQL
+  - This was used to host the database for the website.
+- HTML
+  - HTML was responsible for the core structure and layout of all the templates.
+- CSS
+  - CSS was used to add styling to the HTML to creat a unique design.
+- JavaScript
+  - JavaScript was used to manipulate the DOM to create the dynamically rotating text.
+- jQuery
+  - jQuery was used to create the fullscreen navigation menu.
+- FontAwesome
+  - All the icons present throughout all the pages are from this wonderful package.
 
 ## Credits
 
+
+
 ## Acknowledgments
+
+- [Simon Waldron](https://github.com/saikez) - Simon acted as my client, my mentor, my tutor support, and my best friend throughout this entire project. He helped guide me when I was stuck, helped me learn many good practices, how to quickly and efficiently research topics, how to troubleshoot, explained agile methodologies, helped me setup JIRA, and even allowed me to use his pre-configured e-mail server so that users would have the option to reset their passwords. Thank you so much, Simon, it was an absolute pleasure designing this for you and I'm very eager to work not for you but together with you in the near future.
+
+- Rose S. - Rose was instrumental in helping me proofread this readme, testing.md, and agile.mdY ou've saved me so much time and hassle, after looking at it for so long I just can't spot errors any longer... so, thank you so much, Rose! You're wonderful!
+
+- My family and friends, who have been incredibly supportive and have been instrumental in keeping me motivated throughout this project. Thank you all so much! All of you who helped proofread, test, provide feedback on the website, code, and etc... I couldn't have done it without you all!
+
+- The Code Institute community on Slack - Easy, straightforward, and always willing to help and provide advice.
