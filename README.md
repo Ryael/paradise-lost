@@ -265,7 +265,7 @@ The user model was not included due to the default user model provided by the AL
 
 ## Agile Development Process
 
-[Jira](https://www.atlassian.com/software/jira) was used to create and track User Stories and issues. Login credentials will be provided for the above project space when the project is submitted. A summary of my agile process and learning outcomes can be found [here]().
+[Jira](https://www.atlassian.com/software/jira) was used to create and track User Stories and issues. Login credentials will be provided for the above project space when the project is submitted. A summary of my agile process and learning outcomes can be found [here](https://github.com/Ryael/paradise-lost/blob/main/AGILE.md).
 
 ## Features
 
@@ -409,7 +409,7 @@ All of the above allowed for more precise and correct version control.
 
 ## Testing
 
-Extensive testing has been carried out during and post-development and is available in a separate document [here]().
+Extensive testing has been carried out during and post-development and is available in a separate document [here](https://github.com/Ryael/paradise-lost/blob/main/TESTING.md).
 
 ## Future Updates
 
