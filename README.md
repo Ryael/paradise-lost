@@ -1,6 +1,6 @@
 # Paradise Lost
 
-![Paradise Lost](docs/screenshots/paraddise-lost.gif)
+![Paradise Lost](docs/screenshots/paradise-lost.gif)
 
 A website for managing armies for tabletop board gaming.
 
