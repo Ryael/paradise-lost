@@ -428,7 +428,47 @@ Extensive testing has been carried out during and post-development and is availa
 
 ## Deployment
 
-Deployment details.
+### ElephantSQL
+
+This project uses ElephantSQL as its database. In order to obtain your own Postgres Databse, you should make a new account or just sign-up via your existing GitHub account. After that, follow the next steps:
+
+1. Click "Create New Instance" to create a new database.
+2. Give it a name, common practice dictates that this is the name of the project.
+3. Select the free plan (Tiny Turtle).
+4. Tags can be left blank and instead select the Region and Data center closest to you.
+5. After creation, click on the name to be brought to the dashboard for the database where you will be shown the URL and password.
+
+### Cloudinary API
+
+This project also uses the Cloudinary API in order to store its media assests online. To obtain your own API key, after creating an account and logging in, follow these steps:
+
+1. Select Programmable Media for image and video API.
+2. On your dashboard, you can copy your API Environment Variable.
+3. Make sure to only copy the value, which is the string after the equals sign.
+
+### Heroku Deployment
+
+This project uses Heroku as it's hosting platform of choice, as it runs applications entirely in the cloud.
+
+After account creation, follow the below deployment steps:
+
+1. Select New in the top right corner of your dashboard.
+2. Select Create New App.
+3. Using a unique app name click create app.
+4. Navigate to Settings, where you will configure Config Vars.
+5. You will need to add the very minimum of the following:
+  - CLOUDINARY_URL
+  - DATABASE_URL
+  - DISABLE_COLLECTSTATIC
+  - SECRET_KEY
+
+After all this, you're still not done because Heroku requires two additional files: `requirements.txt` and `Profile`.
+
+You can install your project's requirements using `pip3 install -r requirements.txt`. However, if you have manually added any packages, then you will need to `pip3 freeze --local > requirements.txt`.
+
+The `Procfile` can be created using the following command: `echo web: gunicorn your_app_name.wsgi > Procfile` where "your_app_name" is the name of your application.
+
+Now, lastly, all you need to do is to navigate to the Deploy tab and hit Deploy. Alternatively, you can use the Automatic Deploy functionality to deploy the app every time a push is made.
 
 ## Technologies Used
 
