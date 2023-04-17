@@ -17,9 +17,10 @@
 | #11   | The logo link should only cover the amount of space the logo covers.  | The logo link to the Home page covered the entire nav element.  | The `a` element was placed outside of the `h1` element.   | The `a` element was placed inside of the `h1` element.  | [87a6300](https://github.com/Ryael/paradise-lost/commit/87a6300aef692d6e595d9dc160c9530dc255de19)   |
 | #12   | No horizontal scrollbars should appear at any point.  | Horizontal scrollbars were appearing in some places.  | The width of certain elements was set to `100vw`.   | Changing the `100vw` to `100%` for the width.   | [b8f168d](https://github.com/Ryael/paradise-lost/commit/b8f168d3be274f173e10eb4afc0bb16c59536187)   |
 | #13   | The button corner decorators should always stick to the very corners of the Home page Call to Action button.  | The button corner decorators were slightly off for the top and bottom right corners.  | The div `#cta-button` was caused the right side decorators to be misplaced.   | Removing `#cta-button` div returned the right side decorators to their correct place.   | [c9fc63c](https://github.com/Ryael/paradise-lost/commit/c9fc63c4fddd228e048b467a6f76957108b3140d)   |
+| #14   | WhiteNoise prevented error pages not displaying and prevent CSS from loading. | WhiteNoise was added to help with deployment.  | WhiteNoise caused server errors when `DEBUG_MODE` was set to `FALSE`.  | Uninstalling WhiteNoise and replacing it with Cloudinary fixed the CSS display issue and allowed custom error pages to display.   | [5ac22f9](https://github.com/Ryael/paradise-lost/commit/5ac22f9dcdc7cd00dd442bebe7fca67d95c9408a)   |
 
 ## Validation
 
 ### Responsiveness
 
-Mozilla Firefox's built-in Responsive Design Mode was to extensively test all aspects of Paradise Lost. It works on viewports as wide as 300px.
+Mozilla Firefox's built-in Responsive Design Mode was to extensively test all aspects of Paradise Lost. It works on viewports as small as 350px.
