@@ -271,19 +271,19 @@ The user model was not included due to the default user model provided by the AL
 
 ### Logo
 
-[logo]()
+![logo](docs/screenshots/logo.png)
 
 No suitable icon was found for the logo and hence the Orbitron font was used for it instead. To create a sense of contrast "Paradise" was written in white, whereas "Lost" was written in orange and has lower font weight than "Paradise". This approach to text logo design achieves a sleek and unique look. As expected, interacting with the logo brings the user to the home/landing page.
 
 ### Landing Page
 
-[landing-page]()
+![landing-page](docs/screenshots/landing-page.png)
 
 The landing page utilises a hero-video for its background, which loops perfectly every 10 seconds. Upon loading into the page, the user is greeted the video and the dynamically rotating text. The text rotates between synonyms for "army", "fleet", and other similar words every four seconds. Dynamically changing text is very [effective for user conversion](https://www.convertize.io/dynamic-text/) and creates an engaging landing page. This text is accompanied by a call-to-action button with the words "Enlist Now!", urging potential users to sign-up. Lastly, in the top right corner, a hamburger menu is visible which is used to expand a navigation menu.
 
 ### Navigation Menu - New User
 
-[navigation-menu-new]()
+![navigation-menu-new](docs/screenshots/navigation-menu-new.png)
 
 The navigation menu opens with a smooth fade-in animation and the hamburger icon is replaced with an "X", informing the user that this "X" icon is what they should interact with should they want to close the navigation menu. The user is greeted by a dark gray "carbon-fiber" background with small dots, which consists of a small single dot image that is repeated. This allows the dot to scale to any viewport necessary without any stretching. The links themselves begin as white and when interacted with, all but the active one fade to grey. The social-icons on the bottom also function the same way.
 
@@ -291,61 +291,61 @@ The bottom of the navigation menu features the aforementioned social-icons which
 
 ### Navigation Menu - Registered User
 
-[navigation-menu-new]()
+![navigation-menu-registered](docs/screenshots/navigation-menu-registered.png)
 
 Similarly, to the new user example, the navigation menu changes the links available to the user depending on if they are authenticated or not. If they are not, the above example is what they will see. If they are, however, then they'll instead be shown the Registered User example with the Login and Register links replaced with Dashboard and Logout links.
 
 ### Button
 
-[button]()
+![button](docs/screenshots/)
 
 All the buttons present on the website follow the same design: gray background with orange text and orange decorators on all corners. Upon interaction, the corners expand and float outwards. This effect was made to be reminiscent of an aiming reticle to give the website's buttons a more military-esque feeling, bolstering the site’s sci-fi army feel. The decorators and button text also both flicker upon loading and interaction, as a way of guiding the user.
 
 ### About
 
-[about]()
+![about](docs/screenshots/)
 
 The about page is the one of the first pages the user will see should they want to learn more about the purpose of the website. The entirety of the page background is a dark gray with a similar (albeit more widely spaced) dot pattern to the navigation menu. However, this time the dot itself is generated with CSS, which allows it to expand infinitely as required by the viewport. Links are highlighted in orange and turn to white on mouse-over/interaction, providing the user with visual feedback.
 
 ### Register
 
-[register](register)
+![register](docs/screenshots/)
 
 This is one of the first menus a new user will see, if the landing page user conversion was successful. Upon loading into this page, the user is greeted by a centered menu with a white outline and input text fields outlined in that same orange colour, creating a consistent design throughout. Errors are rendered above their relevant text field and are styled in the same manner as regular paragraph text, meaning that the body text is consistently gray throughout. Additionally, a link to the login page is found at the bottom of the menu and highlighted in orange, instantly standing out to the user who may be looking just to login. The button for the input is same as other buttons showcased earlier. This will be consistent for every other button on this website.
 
 ### Login
 
-[login](login)
+![login](docs/screenshots/)
 
 Logging in is an important process for any website with features locked behind user registration. As such, login menu itself is simple and short. The user is also provided with a remember-me checkbox, with its opacity reduced ever-so-slightly to make it fit in with the overall colour scheme of the menu. Upon it being checked, it becomes highlighted in the usual orange colour. The user is also presented with two links at the bottom of the menu, one linking them back to the register page and the one below that allowing them to use the "Forgot your password" functionality which allows them to reset their password via email.
 
 ### Forgot Your Password
 
-[forgot-your-password](forgot-your-password)
+![forgot-your-password](docs/screenshots/forgot-your-password)
 
 In terms of design, this section is consistent with the above menus. Upon entering the email the user used for registration, they're able to request a link via email to reset their password. Once that link is used, the user is redirected to the reset password page where they are given a chance to input a new password and then confirm that same password. They are then brought to a new page where they are informed their password has been successfully changed.
 
 ### Logout
 
-[logout](logout)
+![logout](docs/screenshots/logout)
 
 Should the user want to logout, they are brought to one of the smallest menus across the entire website. It's centered vertically and horizontally, which admittedly does stand out. However, this is intentional as the very small menu box looks out of place when it's placed in the same location as the other menus. Upon logging out, the user is not provided with any text but instead is brought to the landing page as is standard. The links in the navigation menu also revert to "Register" and "Login".
 
 ### Dashboard
 
-[dashboard](dashboard)
+![dashboard](docs/screenshots/dashboard)
 
 Upon successful registration or login, the dashboard page is the first thing the user will see. While there is no message printed to inform the user that their login has been successful, instead they will be greeted by "Welcome, Commander USERNAME!". Between the redirect and the greeting on the dashboard, I feel this is sufficient to let the user know that their login has been successful. The dashboard is available to the user wherever they go via the navigation menu alongside the "Logout" link. On the dashboard itself, the user is given three options on where to go next: "My Rosters", "Change Password", and "Logout".
 
 ### Change Your Password
 
-[change-your-password](change-your-password)
+![change-your-password](docs/screenshots/change-your-password)
 
 Changing your password on the website is important due to security reasons. Sometimes one may want a more complex password for peace of mind, sometimes one may want to update their password manager, and even sometimes one may want to update their passwords across all websites due to their password being compromised. As such, it is extremely important to provide the user with a way of changing their password. The menu itself is the exact same as before and once the current password, new password, and new password again are submitted, the page is refreshed, and the user is informed via message that their password has been successfully changed.
 
 ### Roster List
 
-[roster-list](roster-list)
+![roster-list](docs/screenshots/roster-list)
 
 Once the user interacts with the "My Rosters" button, they'll be brought to the roster index page, which shows all the available rosters. If this is the user's first time coming to this page, there will be no rosters visible and instead all they'll see is a "Create Roster" button. This button is placed under the created rosters but will be in their immediate viewing space initially. The roster menus are different from the general menus as they are much wider to accommodate the tables. This width is adjusted to around 80% of the viewport on medium-small devices to ensure everything fits nicely and neatly.
 
@@ -353,43 +353,43 @@ Once a roster has been created, it is rendered as a table via HTML and styled us
 
 ### Create Roster
 
-[create-roster](create-roster)
+![create-roster](docs/screenshots/create-roster)
 
 The create roster page is fundamentally very similar to the user account management menus, except that it features a number field and drop-down menus for selection. Below the relevant data input is a button that lets the user create a roster with their selected data. Below the button is a link to go back to roster list.
 
 ### Edit Roster
 
-[edit-roster](edit-roster)
+![edit-roster](docs/screenshots/edit-roster)
 
 Editing a roster is almost identical to creating one as the menu is the same – however, the page title and submit buttons are different. This is a simple and straightforward experience.
 
 ### View Roster
 
-[view-roster](view-roster)
+![view-roster](docs/screenshots/view-roster)
 
 Viewing a roster is more or less identical to the "My Rosters" page, however it shows one select roster in the same fashion as the roster list. Ideally this is what the users would be able to share with other players. Unfortunately, that functionality is currently out of scope. At the bottom of the menu, a "Return" button is available for the user.
 
 ### Delete Roster
 
-[delete-roster](delete-roster)
+![delete-roster](docs/screenshots/delete-roster)
 
 Opting to delete a roster brings the user to a very simple and short menu where they're asked if this is the correct roster to be deleted. This roster is referenced by name and has a button labelled "Yes" under this text, with a "Cancel" link under that should the user want to return to the roster list.
 
 ### Error 404
 
-[error-404](error-404)
+![error-404](docs/screenshots/error-404)
 
 If a user managed to stray off the beaten path, they'll be displayed an error 404 page, which has been styled with the usual orange colour. This design uses an SVG which can be upscaled almost infinitely without sacrificing any quality. This SVG is created entirely using CSS as well. The SVG itself is used to create a round "O" animation that feels at home in any futuristic-themed website and is sandwiched by "4" and "0". The error description is rendered in Exo and in orange, with flashing brackets at both sides that help grab the user's attention.
 
 ### Error 500
 
-[error-500](error-500)
+![error-500](docs/screenshots/error-500)
 
 Similarly, to the error 404-page, error 500 is displayed whenever there's an internal server error. Ideally, users will never encounter it. It uses a similar SVG-styled page with the "4" and "4" replaced with "5" and "0" to spell out error 500. The error description reads "Internal Server Error" in the same style as the above error.
 
 ### Favicon
 
-[favicon][favicon]
+![favicon][docs/screenshots/favicon]
 
 As with all websites, this one also has a Favicon that is displayed beside the Title of the page. A user can quickly and easily discern if they have Paradise Lost open amongst many different tabs by looking for the capital "P" icon, which is rendered in the same font as the title text, Orbitron.
 
